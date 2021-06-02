@@ -32,41 +32,41 @@ namespace Intel_8086
             this.Reset1 = new System.Windows.Forms.Button();
             this.AXLabel = new System.Windows.Forms.Label();
             this.Random = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.AX_text = new System.Windows.Forms.TextBox();
+            this.BX_text = new System.Windows.Forms.TextBox();
             this.BXLabel = new System.Windows.Forms.Label();
             this.CXLabel = new System.Windows.Forms.Label();
             this.DXLabel = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.CX_text = new System.Windows.Forms.TextBox();
+            this.DX_text = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.SI_text = new System.Windows.Forms.TextBox();
+            this.AX_text_2 = new System.Windows.Forms.TextBox();
             this.SILabel = new System.Windows.Forms.Label();
             this.DILabel = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.DI_text = new System.Windows.Forms.TextBox();
             this.BPLabel = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.BP_text = new System.Windows.Forms.TextBox();
             this.SPLabel = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.SP_text = new System.Windows.Forms.TextBox();
             this.DISPLabel = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.DISP_text = new System.Windows.Forms.TextBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.Reset2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.BX_text_2 = new System.Windows.Forms.TextBox();
+            this.CX_text_2 = new System.Windows.Forms.TextBox();
+            this.DX_text_2 = new System.Windows.Forms.TextBox();
+            this.SI_text_2 = new System.Windows.Forms.TextBox();
+            this.DI_text_2 = new System.Windows.Forms.TextBox();
+            this.BP_text_2 = new System.Windows.Forms.TextBox();
+            this.SP_text_2 = new System.Windows.Forms.TextBox();
+            this.DISP_text_2 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
@@ -78,30 +78,30 @@ namespace Intel_8086
             this.checkBox15 = new System.Windows.Forms.CheckBox();
             this.checkBox16 = new System.Windows.Forms.CheckBox();
             this.checkBox17 = new System.Windows.Forms.CheckBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
-            this.button30 = new System.Windows.Forms.Button();
-            this.button31 = new System.Windows.Forms.Button();
+            this.BX_TO_AX = new System.Windows.Forms.Button();
+            this.CX_TO_AX = new System.Windows.Forms.Button();
+            this.DX_TO_AX = new System.Windows.Forms.Button();
+            this.AX_TO_BX = new System.Windows.Forms.Button();
+            this.CX_TO_BX = new System.Windows.Forms.Button();
+            this.DX_TO_BX = new System.Windows.Forms.Button();
+            this.AX_TO_CX = new System.Windows.Forms.Button();
+            this.BX_TO_CX = new System.Windows.Forms.Button();
+            this.DX_TO_CX = new System.Windows.Forms.Button();
+            this.AX_TO_DX = new System.Windows.Forms.Button();
+            this.BX_TO_DX = new System.Windows.Forms.Button();
+            this.CX_TO_DX = new System.Windows.Forms.Button();
+            this.XCHG_DX_CX = new System.Windows.Forms.Button();
+            this.XCHG_DX_BX = new System.Windows.Forms.Button();
+            this.XCHG_DX_AX = new System.Windows.Forms.Button();
+            this.XCHG_CX_DX = new System.Windows.Forms.Button();
+            this.XCHG_CX_BX = new System.Windows.Forms.Button();
+            this.XCHG_CX_AX = new System.Windows.Forms.Button();
+            this.XCHG_BX_DX = new System.Windows.Forms.Button();
+            this.XCHG_BX_CX = new System.Windows.Forms.Button();
+            this.XCHG_BX_AX = new System.Windows.Forms.Button();
+            this.XCHG_AX_DX = new System.Windows.Forms.Button();
+            this.XCHG_AX_CX = new System.Windows.Forms.Button();
+            this.XCHG_AX_BX = new System.Windows.Forms.Button();
             this.button32 = new System.Windows.Forms.Button();
             this.button33 = new System.Windows.Forms.Button();
             this.button34 = new System.Windows.Forms.Button();
@@ -120,6 +120,7 @@ namespace Intel_8086
             this.Reset1.TabIndex = 0;
             this.Reset1.Text = "Reset";
             this.Reset1.UseVisualStyleBackColor = true;
+            this.Reset1.Click += new System.EventHandler(this.Reset1_Click);
             // 
             // AXLabel
             // 
@@ -129,7 +130,6 @@ namespace Intel_8086
             this.AXLabel.Size = new System.Drawing.Size(21, 13);
             this.AXLabel.TabIndex = 1;
             this.AXLabel.Text = "AX";
-            this.AXLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // Random
             // 
@@ -140,19 +140,19 @@ namespace Intel_8086
             this.Random.Text = "Random";
             this.Random.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // AX_text
             // 
-            this.textBox1.Location = new System.Drawing.Point(53, 43);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.AX_text.Location = new System.Drawing.Point(53, 43);
+            this.AX_text.Name = "AX_text";
+            this.AX_text.Size = new System.Drawing.Size(100, 20);
+            this.AX_text.TabIndex = 3;
             // 
-            // textBox2
+            // BX_text
             // 
-            this.textBox2.Location = new System.Drawing.Point(53, 69);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 4;
+            this.BX_text.Location = new System.Drawing.Point(53, 69);
+            this.BX_text.Name = "BX_text";
+            this.BX_text.Size = new System.Drawing.Size(100, 20);
+            this.BX_text.TabIndex = 4;
             // 
             // BXLabel
             // 
@@ -181,19 +181,19 @@ namespace Intel_8086
             this.DXLabel.TabIndex = 7;
             this.DXLabel.Text = "DX";
             // 
-            // textBox3
+            // CX_text
             // 
-            this.textBox3.Location = new System.Drawing.Point(53, 95);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 8;
+            this.CX_text.Location = new System.Drawing.Point(53, 95);
+            this.CX_text.Name = "CX_text";
+            this.CX_text.Size = new System.Drawing.Size(100, 20);
+            this.CX_text.TabIndex = 8;
             // 
-            // textBox4
+            // DX_text
             // 
-            this.textBox4.Location = new System.Drawing.Point(53, 121);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 9;
+            this.DX_text.Location = new System.Drawing.Point(53, 121);
+            this.DX_text.Name = "DX_text";
+            this.DX_text.Size = new System.Drawing.Size(100, 20);
+            this.DX_text.TabIndex = 9;
             // 
             // checkBox1
             // 
@@ -245,19 +245,19 @@ namespace Intel_8086
             this.checkBox5.Text = "indeksowo-bazowy";
             this.checkBox5.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // SI_text
             // 
-            this.textBox5.Location = new System.Drawing.Point(467, 49);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 15;
+            this.SI_text.Location = new System.Drawing.Point(467, 49);
+            this.SI_text.Name = "SI_text";
+            this.SI_text.Size = new System.Drawing.Size(100, 20);
+            this.SI_text.TabIndex = 15;
             // 
-            // textBox6
+            // AX_text_2
             // 
-            this.textBox6.Location = new System.Drawing.Point(159, 43);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 16;
+            this.AX_text_2.Location = new System.Drawing.Point(159, 43);
+            this.AX_text_2.Name = "AX_text_2";
+            this.AX_text_2.Size = new System.Drawing.Size(100, 20);
+            this.AX_text_2.TabIndex = 16;
             // 
             // SILabel
             // 
@@ -277,12 +277,12 @@ namespace Intel_8086
             this.DILabel.TabIndex = 19;
             this.DILabel.Text = "DI";
             // 
-            // textBox7
+            // DI_text
             // 
-            this.textBox7.Location = new System.Drawing.Point(467, 75);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 18;
+            this.DI_text.Location = new System.Drawing.Point(467, 75);
+            this.DI_text.Name = "DI_text";
+            this.DI_text.Size = new System.Drawing.Size(100, 20);
+            this.DI_text.TabIndex = 18;
             // 
             // BPLabel
             // 
@@ -293,12 +293,12 @@ namespace Intel_8086
             this.BPLabel.TabIndex = 21;
             this.BPLabel.Text = "BP";
             // 
-            // textBox8
+            // BP_text
             // 
-            this.textBox8.Location = new System.Drawing.Point(467, 104);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 20;
+            this.BP_text.Location = new System.Drawing.Point(467, 104);
+            this.BP_text.Name = "BP_text";
+            this.BP_text.Size = new System.Drawing.Size(100, 20);
+            this.BP_text.TabIndex = 20;
             // 
             // SPLabel
             // 
@@ -309,12 +309,12 @@ namespace Intel_8086
             this.SPLabel.TabIndex = 23;
             this.SPLabel.Text = "SP";
             // 
-            // textBox9
+            // SP_text
             // 
-            this.textBox9.Location = new System.Drawing.Point(467, 127);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 22;
+            this.SP_text.Location = new System.Drawing.Point(467, 127);
+            this.SP_text.Name = "SP_text";
+            this.SP_text.Size = new System.Drawing.Size(100, 20);
+            this.SP_text.TabIndex = 22;
             // 
             // DISPLabel
             // 
@@ -325,12 +325,12 @@ namespace Intel_8086
             this.DISPLabel.TabIndex = 25;
             this.DISPLabel.Text = "DISP";
             // 
-            // textBox10
+            // DISP_text
             // 
-            this.textBox10.Location = new System.Drawing.Point(467, 192);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 24;
+            this.DISP_text.Location = new System.Drawing.Point(467, 192);
+            this.DISP_text.Name = "DISP_text";
+            this.DISP_text.Size = new System.Drawing.Size(100, 20);
+            this.DISP_text.TabIndex = 24;
             // 
             // checkBox6
             // 
@@ -360,6 +360,7 @@ namespace Intel_8086
             this.Reset2.TabIndex = 28;
             this.Reset2.Text = "Reset";
             this.Reset2.UseVisualStyleBackColor = true;
+            this.Reset2.Click += new System.EventHandler(this.Reset2_Click);
             // 
             // button4
             // 
@@ -370,61 +371,61 @@ namespace Intel_8086
             this.button4.Text = "MOV";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // textBox11
+            // BX_text_2
             // 
-            this.textBox11.Location = new System.Drawing.Point(159, 69);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 20);
-            this.textBox11.TabIndex = 30;
+            this.BX_text_2.Location = new System.Drawing.Point(159, 69);
+            this.BX_text_2.Name = "BX_text_2";
+            this.BX_text_2.Size = new System.Drawing.Size(100, 20);
+            this.BX_text_2.TabIndex = 30;
             // 
-            // textBox12
+            // CX_text_2
             // 
-            this.textBox12.Location = new System.Drawing.Point(159, 95);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 20);
-            this.textBox12.TabIndex = 31;
+            this.CX_text_2.Location = new System.Drawing.Point(159, 95);
+            this.CX_text_2.Name = "CX_text_2";
+            this.CX_text_2.Size = new System.Drawing.Size(100, 20);
+            this.CX_text_2.TabIndex = 31;
             // 
-            // textBox13
+            // DX_text_2
             // 
-            this.textBox13.Location = new System.Drawing.Point(159, 121);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(100, 20);
-            this.textBox13.TabIndex = 32;
+            this.DX_text_2.Location = new System.Drawing.Point(159, 121);
+            this.DX_text_2.Name = "DX_text_2";
+            this.DX_text_2.Size = new System.Drawing.Size(100, 20);
+            this.DX_text_2.TabIndex = 32;
             // 
-            // textBox14
+            // SI_text_2
             // 
-            this.textBox14.Location = new System.Drawing.Point(573, 49);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 20);
-            this.textBox14.TabIndex = 33;
+            this.SI_text_2.Location = new System.Drawing.Point(573, 49);
+            this.SI_text_2.Name = "SI_text_2";
+            this.SI_text_2.Size = new System.Drawing.Size(100, 20);
+            this.SI_text_2.TabIndex = 33;
             // 
-            // textBox15
+            // DI_text_2
             // 
-            this.textBox15.Location = new System.Drawing.Point(573, 75);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 20);
-            this.textBox15.TabIndex = 34;
+            this.DI_text_2.Location = new System.Drawing.Point(573, 75);
+            this.DI_text_2.Name = "DI_text_2";
+            this.DI_text_2.Size = new System.Drawing.Size(100, 20);
+            this.DI_text_2.TabIndex = 34;
             // 
-            // textBox16
+            // BP_text_2
             // 
-            this.textBox16.Location = new System.Drawing.Point(573, 104);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(100, 20);
-            this.textBox16.TabIndex = 35;
+            this.BP_text_2.Location = new System.Drawing.Point(573, 104);
+            this.BP_text_2.Name = "BP_text_2";
+            this.BP_text_2.Size = new System.Drawing.Size(100, 20);
+            this.BP_text_2.TabIndex = 35;
             // 
-            // textBox17
+            // SP_text_2
             // 
-            this.textBox17.Location = new System.Drawing.Point(573, 127);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(100, 20);
-            this.textBox17.TabIndex = 36;
+            this.SP_text_2.Location = new System.Drawing.Point(573, 127);
+            this.SP_text_2.Name = "SP_text_2";
+            this.SP_text_2.Size = new System.Drawing.Size(100, 20);
+            this.SP_text_2.TabIndex = 36;
             // 
-            // textBox18
+            // DISP_text_2
             // 
-            this.textBox18.Location = new System.Drawing.Point(573, 192);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(100, 20);
-            this.textBox18.TabIndex = 37;
+            this.DISP_text_2.Location = new System.Drawing.Point(573, 192);
+            this.DISP_text_2.Name = "DISP_text_2";
+            this.DISP_text_2.Size = new System.Drawing.Size(100, 20);
+            this.DISP_text_2.TabIndex = 37;
             // 
             // button5
             // 
@@ -535,223 +536,245 @@ namespace Intel_8086
             this.checkBox17.Text = "DI i BP";
             this.checkBox17.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // BX_TO_AX
             // 
-            this.button6.Location = new System.Drawing.Point(27, 157);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(85, 23);
-            this.button6.TabIndex = 49;
-            this.button6.Text = "MOV AX , BX";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.BX_TO_AX.Location = new System.Drawing.Point(27, 157);
+            this.BX_TO_AX.Name = "BX_TO_AX";
+            this.BX_TO_AX.Size = new System.Drawing.Size(85, 23);
+            this.BX_TO_AX.TabIndex = 49;
+            this.BX_TO_AX.Text = "MOV AX , BX";
+            this.BX_TO_AX.UseVisualStyleBackColor = true;
+            this.BX_TO_AX.Click += new System.EventHandler(this.BX_TO_AX_Click);
             // 
-            // button7
+            // CX_TO_AX
             // 
-            this.button7.Location = new System.Drawing.Point(27, 186);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(85, 23);
-            this.button7.TabIndex = 50;
-            this.button7.Text = "MOV AX , CX";
-            this.button7.UseVisualStyleBackColor = true;
+            this.CX_TO_AX.Location = new System.Drawing.Point(27, 186);
+            this.CX_TO_AX.Name = "CX_TO_AX";
+            this.CX_TO_AX.Size = new System.Drawing.Size(85, 23);
+            this.CX_TO_AX.TabIndex = 50;
+            this.CX_TO_AX.Text = "MOV AX , CX";
+            this.CX_TO_AX.UseVisualStyleBackColor = true;
+            this.CX_TO_AX.Click += new System.EventHandler(this.CX_TO_AX_Click);
             // 
-            // button8
+            // DX_TO_AX
             // 
-            this.button8.Location = new System.Drawing.Point(27, 215);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(85, 23);
-            this.button8.TabIndex = 51;
-            this.button8.Text = "MOV AX , DX";
-            this.button8.UseVisualStyleBackColor = true;
+            this.DX_TO_AX.Location = new System.Drawing.Point(27, 215);
+            this.DX_TO_AX.Name = "DX_TO_AX";
+            this.DX_TO_AX.Size = new System.Drawing.Size(85, 23);
+            this.DX_TO_AX.TabIndex = 51;
+            this.DX_TO_AX.Text = "MOV AX , DX";
+            this.DX_TO_AX.UseVisualStyleBackColor = true;
+            this.DX_TO_AX.Click += new System.EventHandler(this.DX_TO_AX_Click);
             // 
-            // button9
+            // AX_TO_BX
             // 
-            this.button9.Location = new System.Drawing.Point(27, 244);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(85, 23);
-            this.button9.TabIndex = 52;
-            this.button9.Text = "MOV BX , AX";
-            this.button9.UseVisualStyleBackColor = true;
+            this.AX_TO_BX.Location = new System.Drawing.Point(27, 244);
+            this.AX_TO_BX.Name = "AX_TO_BX";
+            this.AX_TO_BX.Size = new System.Drawing.Size(85, 23);
+            this.AX_TO_BX.TabIndex = 52;
+            this.AX_TO_BX.Text = "MOV BX , AX";
+            this.AX_TO_BX.UseVisualStyleBackColor = true;
+            this.AX_TO_BX.Click += new System.EventHandler(this.AX_TO_BX_Click);
             // 
-            // button10
+            // CX_TO_BX
             // 
-            this.button10.Location = new System.Drawing.Point(27, 273);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(85, 23);
-            this.button10.TabIndex = 53;
-            this.button10.Text = "MOV BX , CX";
-            this.button10.UseVisualStyleBackColor = true;
+            this.CX_TO_BX.Location = new System.Drawing.Point(27, 273);
+            this.CX_TO_BX.Name = "CX_TO_BX";
+            this.CX_TO_BX.Size = new System.Drawing.Size(85, 23);
+            this.CX_TO_BX.TabIndex = 53;
+            this.CX_TO_BX.Text = "MOV BX , CX";
+            this.CX_TO_BX.UseVisualStyleBackColor = true;
+            this.CX_TO_BX.Click += new System.EventHandler(this.CX_TO_BX_Click);
             // 
-            // button11
+            // DX_TO_BX
             // 
-            this.button11.Location = new System.Drawing.Point(27, 302);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(85, 23);
-            this.button11.TabIndex = 54;
-            this.button11.Text = "MOV BX , DX";
-            this.button11.UseVisualStyleBackColor = true;
+            this.DX_TO_BX.Location = new System.Drawing.Point(27, 302);
+            this.DX_TO_BX.Name = "DX_TO_BX";
+            this.DX_TO_BX.Size = new System.Drawing.Size(85, 23);
+            this.DX_TO_BX.TabIndex = 54;
+            this.DX_TO_BX.Text = "MOV BX , DX";
+            this.DX_TO_BX.UseVisualStyleBackColor = true;
+            this.DX_TO_BX.Click += new System.EventHandler(this.DX_TO_BX_Click);
             // 
-            // button12
+            // AX_TO_CX
             // 
-            this.button12.Location = new System.Drawing.Point(27, 331);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(85, 23);
-            this.button12.TabIndex = 55;
-            this.button12.Text = "MOV CX , AX";
-            this.button12.UseVisualStyleBackColor = true;
+            this.AX_TO_CX.Location = new System.Drawing.Point(27, 331);
+            this.AX_TO_CX.Name = "AX_TO_CX";
+            this.AX_TO_CX.Size = new System.Drawing.Size(85, 23);
+            this.AX_TO_CX.TabIndex = 55;
+            this.AX_TO_CX.Text = "MOV CX , AX";
+            this.AX_TO_CX.UseVisualStyleBackColor = true;
+            this.AX_TO_CX.Click += new System.EventHandler(this.AX_TO_CX_Click);
             // 
-            // button13
+            // BX_TO_CX
             // 
-            this.button13.Location = new System.Drawing.Point(27, 360);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(85, 23);
-            this.button13.TabIndex = 56;
-            this.button13.Text = "MOV CX , BX";
-            this.button13.UseVisualStyleBackColor = true;
+            this.BX_TO_CX.Location = new System.Drawing.Point(27, 360);
+            this.BX_TO_CX.Name = "BX_TO_CX";
+            this.BX_TO_CX.Size = new System.Drawing.Size(85, 23);
+            this.BX_TO_CX.TabIndex = 56;
+            this.BX_TO_CX.Text = "MOV CX , BX";
+            this.BX_TO_CX.UseVisualStyleBackColor = true;
+            this.BX_TO_CX.Click += new System.EventHandler(this.BX_TO_CX_Click);
             // 
-            // button14
+            // DX_TO_CX
             // 
-            this.button14.Location = new System.Drawing.Point(27, 389);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(85, 23);
-            this.button14.TabIndex = 57;
-            this.button14.Text = "MOV CX , DX";
-            this.button14.UseVisualStyleBackColor = true;
+            this.DX_TO_CX.Location = new System.Drawing.Point(27, 389);
+            this.DX_TO_CX.Name = "DX_TO_CX";
+            this.DX_TO_CX.Size = new System.Drawing.Size(85, 23);
+            this.DX_TO_CX.TabIndex = 57;
+            this.DX_TO_CX.Text = "MOV CX , DX";
+            this.DX_TO_CX.UseVisualStyleBackColor = true;
+            this.DX_TO_CX.Click += new System.EventHandler(this.DX_TO_CX_Click);
             // 
-            // button15
+            // AX_TO_DX
             // 
-            this.button15.Location = new System.Drawing.Point(27, 418);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(85, 23);
-            this.button15.TabIndex = 58;
-            this.button15.Text = "MOV DX , AX";
-            this.button15.UseVisualStyleBackColor = true;
+            this.AX_TO_DX.Location = new System.Drawing.Point(27, 418);
+            this.AX_TO_DX.Name = "AX_TO_DX";
+            this.AX_TO_DX.Size = new System.Drawing.Size(85, 23);
+            this.AX_TO_DX.TabIndex = 58;
+            this.AX_TO_DX.Text = "MOV DX , AX";
+            this.AX_TO_DX.UseVisualStyleBackColor = true;
+            this.AX_TO_DX.Click += new System.EventHandler(this.AX_TO_DX_Click);
             // 
-            // button16
+            // BX_TO_DX
             // 
-            this.button16.Location = new System.Drawing.Point(27, 447);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(85, 23);
-            this.button16.TabIndex = 59;
-            this.button16.Text = "MOV DX , BX";
-            this.button16.UseVisualStyleBackColor = true;
+            this.BX_TO_DX.Location = new System.Drawing.Point(27, 447);
+            this.BX_TO_DX.Name = "BX_TO_DX";
+            this.BX_TO_DX.Size = new System.Drawing.Size(85, 23);
+            this.BX_TO_DX.TabIndex = 59;
+            this.BX_TO_DX.Text = "MOV DX , BX";
+            this.BX_TO_DX.UseVisualStyleBackColor = true;
+            this.BX_TO_DX.Click += new System.EventHandler(this.BX_TO_DX_Click);
             // 
-            // button17
+            // CX_TO_DX
             // 
-            this.button17.Location = new System.Drawing.Point(27, 476);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(85, 23);
-            this.button17.TabIndex = 60;
-            this.button17.Text = "MOV DX , CX";
-            this.button17.UseVisualStyleBackColor = true;
+            this.CX_TO_DX.Location = new System.Drawing.Point(27, 476);
+            this.CX_TO_DX.Name = "CX_TO_DX";
+            this.CX_TO_DX.Size = new System.Drawing.Size(85, 23);
+            this.CX_TO_DX.TabIndex = 60;
+            this.CX_TO_DX.Text = "MOV DX , CX";
+            this.CX_TO_DX.UseVisualStyleBackColor = true;
+            this.CX_TO_DX.Click += new System.EventHandler(this.CX_TO_DX_Click);
             // 
-            // button20
+            // XCHG_DX_CX
             // 
-            this.button20.Location = new System.Drawing.Point(148, 476);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(86, 23);
-            this.button20.TabIndex = 73;
-            this.button20.Text = "XCHG DX , CX";
-            this.button20.UseVisualStyleBackColor = true;
+            this.XCHG_DX_CX.Location = new System.Drawing.Point(148, 476);
+            this.XCHG_DX_CX.Name = "XCHG_DX_CX";
+            this.XCHG_DX_CX.Size = new System.Drawing.Size(86, 23);
+            this.XCHG_DX_CX.TabIndex = 73;
+            this.XCHG_DX_CX.Text = "XCHG DX , CX";
+            this.XCHG_DX_CX.UseVisualStyleBackColor = true;
+            this.XCHG_DX_CX.Click += new System.EventHandler(this.XCHG_DX_CX_Click);
             // 
-            // button21
+            // XCHG_DX_BX
             // 
-            this.button21.Location = new System.Drawing.Point(148, 447);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(86, 23);
-            this.button21.TabIndex = 72;
-            this.button21.Text = "XCHG DX , BX";
-            this.button21.UseVisualStyleBackColor = true;
+            this.XCHG_DX_BX.Location = new System.Drawing.Point(148, 447);
+            this.XCHG_DX_BX.Name = "XCHG_DX_BX";
+            this.XCHG_DX_BX.Size = new System.Drawing.Size(86, 23);
+            this.XCHG_DX_BX.TabIndex = 72;
+            this.XCHG_DX_BX.Text = "XCHG DX , BX";
+            this.XCHG_DX_BX.UseVisualStyleBackColor = true;
+            this.XCHG_DX_BX.Click += new System.EventHandler(this.XCHG_DX_BX_Click);
             // 
-            // button22
+            // XCHG_DX_AX
             // 
-            this.button22.Location = new System.Drawing.Point(148, 418);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(86, 23);
-            this.button22.TabIndex = 71;
-            this.button22.Text = "XCHG DX , AX";
-            this.button22.UseVisualStyleBackColor = true;
+            this.XCHG_DX_AX.Location = new System.Drawing.Point(148, 418);
+            this.XCHG_DX_AX.Name = "XCHG_DX_AX";
+            this.XCHG_DX_AX.Size = new System.Drawing.Size(86, 23);
+            this.XCHG_DX_AX.TabIndex = 71;
+            this.XCHG_DX_AX.Text = "XCHG DX , AX";
+            this.XCHG_DX_AX.UseVisualStyleBackColor = true;
+            this.XCHG_DX_AX.Click += new System.EventHandler(this.XCHG_DX_AX_Click);
             // 
-            // button23
+            // XCHG_CX_DX
             // 
-            this.button23.Location = new System.Drawing.Point(148, 389);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(86, 23);
-            this.button23.TabIndex = 70;
-            this.button23.Text = "XCHG CX , DX";
-            this.button23.UseVisualStyleBackColor = true;
+            this.XCHG_CX_DX.Location = new System.Drawing.Point(148, 389);
+            this.XCHG_CX_DX.Name = "XCHG_CX_DX";
+            this.XCHG_CX_DX.Size = new System.Drawing.Size(86, 23);
+            this.XCHG_CX_DX.TabIndex = 70;
+            this.XCHG_CX_DX.Text = "XCHG CX , DX";
+            this.XCHG_CX_DX.UseVisualStyleBackColor = true;
+            this.XCHG_CX_DX.Click += new System.EventHandler(this.XCHG_CX_DX_Click);
             // 
-            // button24
+            // XCHG_CX_BX
             // 
-            this.button24.Location = new System.Drawing.Point(148, 360);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(86, 23);
-            this.button24.TabIndex = 69;
-            this.button24.Text = "XCHG CX , BX";
-            this.button24.UseVisualStyleBackColor = true;
+            this.XCHG_CX_BX.Location = new System.Drawing.Point(148, 360);
+            this.XCHG_CX_BX.Name = "XCHG_CX_BX";
+            this.XCHG_CX_BX.Size = new System.Drawing.Size(86, 23);
+            this.XCHG_CX_BX.TabIndex = 69;
+            this.XCHG_CX_BX.Text = "XCHG CX , BX";
+            this.XCHG_CX_BX.UseVisualStyleBackColor = true;
+            this.XCHG_CX_BX.Click += new System.EventHandler(this.XCHG_CX_BX_Click);
             // 
-            // button25
+            // XCHG_CX_AX
             // 
-            this.button25.Location = new System.Drawing.Point(148, 331);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(86, 23);
-            this.button25.TabIndex = 68;
-            this.button25.Text = "XCHG CX , AX";
-            this.button25.UseVisualStyleBackColor = true;
+            this.XCHG_CX_AX.Location = new System.Drawing.Point(148, 331);
+            this.XCHG_CX_AX.Name = "XCHG_CX_AX";
+            this.XCHG_CX_AX.Size = new System.Drawing.Size(86, 23);
+            this.XCHG_CX_AX.TabIndex = 68;
+            this.XCHG_CX_AX.Text = "XCHG CX , AX";
+            this.XCHG_CX_AX.UseVisualStyleBackColor = true;
+            this.XCHG_CX_AX.Click += new System.EventHandler(this.XCHG_CX_AX_Click);
             // 
-            // button26
+            // XCHG_BX_DX
             // 
-            this.button26.Location = new System.Drawing.Point(148, 302);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(86, 23);
-            this.button26.TabIndex = 67;
-            this.button26.Text = "XCHG BX , DX";
-            this.button26.UseVisualStyleBackColor = true;
+            this.XCHG_BX_DX.Location = new System.Drawing.Point(148, 302);
+            this.XCHG_BX_DX.Name = "XCHG_BX_DX";
+            this.XCHG_BX_DX.Size = new System.Drawing.Size(86, 23);
+            this.XCHG_BX_DX.TabIndex = 67;
+            this.XCHG_BX_DX.Text = "XCHG BX , DX";
+            this.XCHG_BX_DX.UseVisualStyleBackColor = true;
+            this.XCHG_BX_DX.Click += new System.EventHandler(this.XCHG_BX_DX_Click);
             // 
-            // button27
+            // XCHG_BX_CX
             // 
-            this.button27.Location = new System.Drawing.Point(148, 273);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(86, 23);
-            this.button27.TabIndex = 66;
-            this.button27.Text = "XCHG BX , CX";
-            this.button27.UseVisualStyleBackColor = true;
+            this.XCHG_BX_CX.Location = new System.Drawing.Point(148, 273);
+            this.XCHG_BX_CX.Name = "XCHG_BX_CX";
+            this.XCHG_BX_CX.Size = new System.Drawing.Size(86, 23);
+            this.XCHG_BX_CX.TabIndex = 66;
+            this.XCHG_BX_CX.Text = "XCHG BX , CX";
+            this.XCHG_BX_CX.UseVisualStyleBackColor = true;
+            this.XCHG_BX_CX.Click += new System.EventHandler(this.XCHG_BX_CX_Click);
             // 
-            // button28
+            // XCHG_BX_AX
             // 
-            this.button28.Location = new System.Drawing.Point(148, 244);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(86, 23);
-            this.button28.TabIndex = 65;
-            this.button28.Text = "XCHG BX , AX";
-            this.button28.UseVisualStyleBackColor = true;
+            this.XCHG_BX_AX.Location = new System.Drawing.Point(148, 244);
+            this.XCHG_BX_AX.Name = "XCHG_BX_AX";
+            this.XCHG_BX_AX.Size = new System.Drawing.Size(86, 23);
+            this.XCHG_BX_AX.TabIndex = 65;
+            this.XCHG_BX_AX.Text = "XCHG BX , AX";
+            this.XCHG_BX_AX.UseVisualStyleBackColor = true;
+            this.XCHG_BX_AX.Click += new System.EventHandler(this.XCHG_BX_AX_Click);
             // 
-            // button29
+            // XCHG_AX_DX
             // 
-            this.button29.Location = new System.Drawing.Point(148, 215);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(86, 23);
-            this.button29.TabIndex = 64;
-            this.button29.Text = "XCHG AX , DX";
-            this.button29.UseVisualStyleBackColor = true;
+            this.XCHG_AX_DX.Location = new System.Drawing.Point(148, 215);
+            this.XCHG_AX_DX.Name = "XCHG_AX_DX";
+            this.XCHG_AX_DX.Size = new System.Drawing.Size(86, 23);
+            this.XCHG_AX_DX.TabIndex = 64;
+            this.XCHG_AX_DX.Text = "XCHG AX , DX";
+            this.XCHG_AX_DX.UseVisualStyleBackColor = true;
+            this.XCHG_AX_DX.Click += new System.EventHandler(this.XCHG_AX_DX_Click);
             // 
-            // button30
+            // XCHG_AX_CX
             // 
-            this.button30.Location = new System.Drawing.Point(148, 186);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(86, 23);
-            this.button30.TabIndex = 63;
-            this.button30.Text = "XCHG AX , CX";
-            this.button30.UseVisualStyleBackColor = true;
-            this.button30.Click += new System.EventHandler(this.button30_Click);
+            this.XCHG_AX_CX.Location = new System.Drawing.Point(148, 186);
+            this.XCHG_AX_CX.Name = "XCHG_AX_CX";
+            this.XCHG_AX_CX.Size = new System.Drawing.Size(86, 23);
+            this.XCHG_AX_CX.TabIndex = 63;
+            this.XCHG_AX_CX.Text = "XCHG AX , CX";
+            this.XCHG_AX_CX.UseVisualStyleBackColor = true;
+            this.XCHG_AX_CX.Click += new System.EventHandler(this.XCHG_AX_CX_Click);
             // 
-            // button31
+            // XCHG_AX_BX
             // 
-            this.button31.Location = new System.Drawing.Point(148, 157);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(86, 23);
-            this.button31.TabIndex = 62;
-            this.button31.Text = "XCHG AX , BX";
-            this.button31.UseVisualStyleBackColor = true;
+            this.XCHG_AX_BX.Location = new System.Drawing.Point(148, 157);
+            this.XCHG_AX_BX.Name = "XCHG_AX_BX";
+            this.XCHG_AX_BX.Size = new System.Drawing.Size(86, 23);
+            this.XCHG_AX_BX.TabIndex = 62;
+            this.XCHG_AX_BX.Text = "XCHG AX , BX";
+            this.XCHG_AX_BX.UseVisualStyleBackColor = true;
+            this.XCHG_AX_BX.Click += new System.EventHandler(this.XCHG_AX_BX_Click);
             // 
             // button32
             // 
@@ -839,30 +862,30 @@ namespace Intel_8086
             this.Controls.Add(this.button34);
             this.Controls.Add(this.button33);
             this.Controls.Add(this.button32);
-            this.Controls.Add(this.button20);
-            this.Controls.Add(this.button21);
-            this.Controls.Add(this.button22);
-            this.Controls.Add(this.button23);
-            this.Controls.Add(this.button24);
-            this.Controls.Add(this.button25);
-            this.Controls.Add(this.button26);
-            this.Controls.Add(this.button27);
-            this.Controls.Add(this.button28);
-            this.Controls.Add(this.button29);
-            this.Controls.Add(this.button30);
-            this.Controls.Add(this.button31);
-            this.Controls.Add(this.button17);
-            this.Controls.Add(this.button16);
-            this.Controls.Add(this.button15);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.button13);
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.XCHG_DX_CX);
+            this.Controls.Add(this.XCHG_DX_BX);
+            this.Controls.Add(this.XCHG_DX_AX);
+            this.Controls.Add(this.XCHG_CX_DX);
+            this.Controls.Add(this.XCHG_CX_BX);
+            this.Controls.Add(this.XCHG_CX_AX);
+            this.Controls.Add(this.XCHG_BX_DX);
+            this.Controls.Add(this.XCHG_BX_CX);
+            this.Controls.Add(this.XCHG_BX_AX);
+            this.Controls.Add(this.XCHG_AX_DX);
+            this.Controls.Add(this.XCHG_AX_CX);
+            this.Controls.Add(this.XCHG_AX_BX);
+            this.Controls.Add(this.CX_TO_DX);
+            this.Controls.Add(this.BX_TO_DX);
+            this.Controls.Add(this.AX_TO_DX);
+            this.Controls.Add(this.DX_TO_CX);
+            this.Controls.Add(this.BX_TO_CX);
+            this.Controls.Add(this.AX_TO_CX);
+            this.Controls.Add(this.DX_TO_BX);
+            this.Controls.Add(this.CX_TO_BX);
+            this.Controls.Add(this.AX_TO_BX);
+            this.Controls.Add(this.DX_TO_AX);
+            this.Controls.Add(this.CX_TO_AX);
+            this.Controls.Add(this.BX_TO_AX);
             this.Controls.Add(this.checkBox17);
             this.Controls.Add(this.checkBox16);
             this.Controls.Add(this.checkBox15);
@@ -874,47 +897,46 @@ namespace Intel_8086
             this.Controls.Add(this.checkBox9);
             this.Controls.Add(this.checkBox8);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.DISP_text_2);
+            this.Controls.Add(this.SP_text_2);
+            this.Controls.Add(this.BP_text_2);
+            this.Controls.Add(this.DI_text_2);
+            this.Controls.Add(this.SI_text_2);
+            this.Controls.Add(this.DX_text_2);
+            this.Controls.Add(this.CX_text_2);
+            this.Controls.Add(this.BX_text_2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.Reset2);
             this.Controls.Add(this.checkBox7);
             this.Controls.Add(this.checkBox6);
             this.Controls.Add(this.DISPLabel);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.DISP_text);
             this.Controls.Add(this.SPLabel);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.SP_text);
             this.Controls.Add(this.BPLabel);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.BP_text);
             this.Controls.Add(this.DILabel);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.DI_text);
             this.Controls.Add(this.SILabel);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.AX_text_2);
+            this.Controls.Add(this.SI_text);
             this.Controls.Add(this.checkBox5);
             this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.DX_text);
+            this.Controls.Add(this.CX_text);
             this.Controls.Add(this.DXLabel);
             this.Controls.Add(this.CXLabel);
             this.Controls.Add(this.BXLabel);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.BX_text);
+            this.Controls.Add(this.AX_text);
             this.Controls.Add(this.Random);
             this.Controls.Add(this.AXLabel);
             this.Controls.Add(this.Reset1);
             this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "Intel 8086 JW";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -925,41 +947,41 @@ namespace Intel_8086
         private System.Windows.Forms.Button Reset1;
         private System.Windows.Forms.Label AXLabel;
         private System.Windows.Forms.Button Random;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox AX_text;
+        private System.Windows.Forms.TextBox BX_text;
         private System.Windows.Forms.Label BXLabel;
         private System.Windows.Forms.Label CXLabel;
         private System.Windows.Forms.Label DXLabel;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox CX_text;
+        private System.Windows.Forms.TextBox DX_text;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox SI_text;
+        private System.Windows.Forms.TextBox AX_text_2;
         private System.Windows.Forms.Label SILabel;
         private System.Windows.Forms.Label DILabel;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox DI_text;
         private System.Windows.Forms.Label BPLabel;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox BP_text;
         private System.Windows.Forms.Label SPLabel;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox SP_text;
         private System.Windows.Forms.Label DISPLabel;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox DISP_text;
         private System.Windows.Forms.CheckBox checkBox6;
         private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.Button Reset2;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox BX_text_2;
+        private System.Windows.Forms.TextBox CX_text_2;
+        private System.Windows.Forms.TextBox DX_text_2;
+        private System.Windows.Forms.TextBox SI_text_2;
+        private System.Windows.Forms.TextBox DI_text_2;
+        private System.Windows.Forms.TextBox BP_text_2;
+        private System.Windows.Forms.TextBox SP_text_2;
+        private System.Windows.Forms.TextBox DISP_text_2;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.CheckBox checkBox8;
         private System.Windows.Forms.CheckBox checkBox9;
@@ -971,30 +993,30 @@ namespace Intel_8086
         private System.Windows.Forms.CheckBox checkBox15;
         private System.Windows.Forms.CheckBox checkBox16;
         private System.Windows.Forms.CheckBox checkBox17;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.Button button29;
-        private System.Windows.Forms.Button button30;
-        private System.Windows.Forms.Button button31;
+        private System.Windows.Forms.Button BX_TO_AX;
+        private System.Windows.Forms.Button CX_TO_AX;
+        private System.Windows.Forms.Button DX_TO_AX;
+        private System.Windows.Forms.Button AX_TO_BX;
+        private System.Windows.Forms.Button CX_TO_BX;
+        private System.Windows.Forms.Button DX_TO_BX;
+        private System.Windows.Forms.Button AX_TO_CX;
+        private System.Windows.Forms.Button BX_TO_CX;
+        private System.Windows.Forms.Button DX_TO_CX;
+        private System.Windows.Forms.Button AX_TO_DX;
+        private System.Windows.Forms.Button BX_TO_DX;
+        private System.Windows.Forms.Button CX_TO_DX;
+        private System.Windows.Forms.Button XCHG_DX_CX;
+        private System.Windows.Forms.Button XCHG_DX_BX;
+        private System.Windows.Forms.Button XCHG_DX_AX;
+        private System.Windows.Forms.Button XCHG_CX_DX;
+        private System.Windows.Forms.Button XCHG_CX_BX;
+        private System.Windows.Forms.Button XCHG_CX_AX;
+        private System.Windows.Forms.Button XCHG_BX_DX;
+        private System.Windows.Forms.Button XCHG_BX_CX;
+        private System.Windows.Forms.Button XCHG_BX_AX;
+        private System.Windows.Forms.Button XCHG_AX_DX;
+        private System.Windows.Forms.Button XCHG_AX_CX;
+        private System.Windows.Forms.Button XCHG_AX_BX;
         private System.Windows.Forms.Button button32;
         private System.Windows.Forms.Button button33;
         private System.Windows.Forms.Button button34;
