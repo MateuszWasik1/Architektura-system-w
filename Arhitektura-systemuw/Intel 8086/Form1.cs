@@ -241,5 +241,54 @@ namespace Intel_8086
             CX_text.Text = a;
 
         }
+
+        private void Random_Click(object sender, EventArgs e)
+        {
+            Random random = new Random();
+
+            int[] value = new int[4];
+
+            for (int i = 0; i < 4; i++)
+            {
+                
+                value[i] = random.Next(0, 255);
+               
+            }
+            
+
+            AX_text.Text = Convert.ToString(value[0],16).ToUpper();
+            BX_text.Text = Convert.ToString(value[1],16).ToUpper();
+            CX_text.Text = Convert.ToString(value[2],16).ToUpper();
+            DX_text.Text = Convert.ToString(value[3],16).ToUpper();
+
+            AX_text_2.Text = Convert.ToString(value[0],16).ToUpper();
+            BX_text_2.Text = Convert.ToString(value[1],16).ToUpper();
+            CX_text_2.Text = Convert.ToString(value[2],16).ToUpper();
+            DX_text_2.Text = Convert.ToString(value[3],16).ToUpper();
+        }
+
+        private void Random2_Click(object sender, EventArgs e)
+        {
+            Random random = new Random();
+
+            int[] value = new int[5];
+
+            for (int i = 0; i < 5; i++)
+            {
+
+                value[i] = random.Next(0, 255);
+
+            }
+
+
+            SI_text.Text = Convert.ToString(value[0], 16).ToUpper();
+            DI_text.Text = Convert.ToString(value[1], 16).ToUpper();
+            BP_text.Text = Convert.ToString(value[2], 16).ToUpper();
+            SP_text.Text = Convert.ToString(value[3], 16).ToUpper();
+            DISP_text.Text = Convert.ToString(value[4], 16).ToUpper();
+
+
+        }
+
     }
 }
