@@ -17,6 +17,7 @@ namespace Intel_8086
             InitializeComponent();
         }
 
+        int[] memory = new int[65536];
 
         private void Reset1_Click(object sender, EventArgs e)
         {
@@ -246,49 +247,113 @@ namespace Intel_8086
         {
             Random random = new Random();
 
-            int[] value = new int[4];
+            int[] value = new int[8];
+            string[] value2 = new string[8];
 
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < value.Length; i++)
             {
                 
                 value[i] = random.Next(0, 255);
-               
+                  
             }
-            
+            for (int j = 0; j < value.Length; j++)
+            {
+                if (value[j]<16)
+                {
+                   value2[j] = "0"+ Convert.ToString(value[j], 16).ToUpper();
+                }
+                else
+                {
+                    value2[j] = Convert.ToString(value[j], 16).ToUpper();
+                }
+                
+            }
 
-            AX_text.Text = Convert.ToString(value[0],16).ToUpper();
-            BX_text.Text = Convert.ToString(value[1],16).ToUpper();
-            CX_text.Text = Convert.ToString(value[2],16).ToUpper();
-            DX_text.Text = Convert.ToString(value[3],16).ToUpper();
 
-            AX_text_2.Text = Convert.ToString(value[0],16).ToUpper();
-            BX_text_2.Text = Convert.ToString(value[1],16).ToUpper();
-            CX_text_2.Text = Convert.ToString(value[2],16).ToUpper();
-            DX_text_2.Text = Convert.ToString(value[3],16).ToUpper();
+            string a1 = value2[0];
+            string b1 = value2[1];
+            string c1 = value2[2];
+            string d1 = value2[3];
+            string a2 = value2[4];
+            string b2 = value2[5];
+            string c2 = value2[6];
+            string d2 = value2[7];
+
+
+            AX_text.Text = a1 + a2;
+            BX_text.Text = b1 + b2;
+            CX_text.Text = c1 + c2;
+            DX_text.Text = d1 + d2;
+
+            AX_text_2.Text = a1 + a2;
+            BX_text_2.Text = b1 + b2;
+            CX_text_2.Text = c1 + c2;
+            DX_text_2.Text = d1 + d2;
         }
 
         private void Random2_Click(object sender, EventArgs e)
         {
             Random random = new Random();
 
-            int[] value = new int[5];
+            int[] value = new int[10];
+            string[] value2 = new string[10];
 
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < value.Length; i++)
             {
 
                 value[i] = random.Next(0, 255);
 
             }
+            for (int j = 0; j < value.Length; j++)
+            {
+                if (value[j] < 16)
+                {
+                    value2[j] = "0" + Convert.ToString(value[j], 16).ToUpper();
+                }
+                else
+                {
+                    value2[j] = Convert.ToString(value[j], 16).ToUpper();
+                }
 
+            }
 
-            SI_text.Text = Convert.ToString(value[0], 16).ToUpper();
-            DI_text.Text = Convert.ToString(value[1], 16).ToUpper();
-            BP_text.Text = Convert.ToString(value[2], 16).ToUpper();
-            SP_text.Text = Convert.ToString(value[3], 16).ToUpper();
-            DISP_text.Text = Convert.ToString(value[4], 16).ToUpper();
+            string a1 = value2[0];
+            string b1 = value2[1];
+            string c1 = value2[2];
+            string d1 = value2[3];
+            string e1 = value2[4];
+            string a2 = value2[5];
+            string b2 = value2[6];
+            string c2 = value2[7];
+            string d2 = value2[8];
+            string e2 = value2[9];
+
+            SI_text.Text = a1 + a2;
+            DI_text.Text = b1 + b2;
+            BP_text.Text = c1 + c2;
+            SP_text.Text = d1 + d2;
+            DISP_text.Text = e1 + e2;
 
 
         }
 
+        private void Mem_move_Click(object sender, EventArgs e)
+        {
+            if (Mem_To_Reg.Checked == true)
+            {
+
+            }
+            if (Reg_To_Mem.Checked == true)
+            {
+
+
+
+            }
+        }
+
+        private void Mem_Xchg_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
