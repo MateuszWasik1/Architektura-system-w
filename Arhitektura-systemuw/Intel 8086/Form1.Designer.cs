@@ -100,25 +100,25 @@ namespace Intel_8086
             this.Mem_To_Reg = new System.Windows.Forms.RadioButton();
             this.Reg_To_Mem = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.Inedex_base = new System.Windows.Forms.RadioButton();
-            this.Base = new System.Windows.Forms.RadioButton();
-            this.Index = new System.Windows.Forms.RadioButton();
+            this.Index_base_check = new System.Windows.Forms.RadioButton();
+            this.Base_check = new System.Windows.Forms.RadioButton();
+            this.Index_check = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.DI = new System.Windows.Forms.RadioButton();
-            this.SI = new System.Windows.Forms.RadioButton();
+            this.DI_check = new System.Windows.Forms.RadioButton();
+            this.SI_check = new System.Windows.Forms.RadioButton();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.AX = new System.Windows.Forms.RadioButton();
-            this.DX = new System.Windows.Forms.RadioButton();
-            this.CX = new System.Windows.Forms.RadioButton();
-            this.BX = new System.Windows.Forms.RadioButton();
+            this.AX_check = new System.Windows.Forms.RadioButton();
+            this.DX_check = new System.Windows.Forms.RadioButton();
+            this.CX_check = new System.Windows.Forms.RadioButton();
+            this.BX_check = new System.Windows.Forms.RadioButton();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.BP = new System.Windows.Forms.RadioButton();
-            this.BX2 = new System.Windows.Forms.RadioButton();
+            this.BP_check = new System.Windows.Forms.RadioButton();
+            this.BX2_check = new System.Windows.Forms.RadioButton();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.DI_BP = new System.Windows.Forms.RadioButton();
-            this.SI_BP = new System.Windows.Forms.RadioButton();
-            this.DX_BX = new System.Windows.Forms.RadioButton();
-            this.SI_BX = new System.Windows.Forms.RadioButton();
+            this.DI_BP_check = new System.Windows.Forms.RadioButton();
+            this.SI_BP_check = new System.Windows.Forms.RadioButton();
+            this.DI_BX_check = new System.Windows.Forms.RadioButton();
+            this.SI_BX_check = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -162,6 +162,8 @@ namespace Intel_8086
             this.AX_text.Name = "AX_text";
             this.AX_text.Size = new System.Drawing.Size(100, 20);
             this.AX_text.TabIndex = 3;
+            this.AX_text.Text = "0000";
+            this.AX_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // BX_text
             // 
@@ -169,6 +171,8 @@ namespace Intel_8086
             this.BX_text.Name = "BX_text";
             this.BX_text.Size = new System.Drawing.Size(100, 20);
             this.BX_text.TabIndex = 4;
+            this.BX_text.Text = "0000";
+            this.BX_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // BXLabel
             // 
@@ -203,6 +207,8 @@ namespace Intel_8086
             this.CX_text.Name = "CX_text";
             this.CX_text.Size = new System.Drawing.Size(100, 20);
             this.CX_text.TabIndex = 8;
+            this.CX_text.Text = "0000";
+            this.CX_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // DX_text
             // 
@@ -210,6 +216,8 @@ namespace Intel_8086
             this.DX_text.Name = "DX_text";
             this.DX_text.Size = new System.Drawing.Size(100, 20);
             this.DX_text.TabIndex = 9;
+            this.DX_text.Text = "0000";
+            this.DX_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // SI_text
             // 
@@ -217,6 +225,8 @@ namespace Intel_8086
             this.SI_text.Name = "SI_text";
             this.SI_text.Size = new System.Drawing.Size(100, 20);
             this.SI_text.TabIndex = 15;
+            this.SI_text.Text = "0000";
+            this.SI_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // AX_text_2
             // 
@@ -224,6 +234,8 @@ namespace Intel_8086
             this.AX_text_2.Name = "AX_text_2";
             this.AX_text_2.Size = new System.Drawing.Size(100, 20);
             this.AX_text_2.TabIndex = 16;
+            this.AX_text_2.Text = "0000";
+            this.AX_text_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // SILabel
             // 
@@ -249,6 +261,8 @@ namespace Intel_8086
             this.DI_text.Name = "DI_text";
             this.DI_text.Size = new System.Drawing.Size(100, 20);
             this.DI_text.TabIndex = 18;
+            this.DI_text.Text = "0000";
+            this.DI_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // BPLabel
             // 
@@ -265,6 +279,8 @@ namespace Intel_8086
             this.BP_text.Name = "BP_text";
             this.BP_text.Size = new System.Drawing.Size(100, 20);
             this.BP_text.TabIndex = 20;
+            this.BP_text.Text = "0000";
+            this.BP_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // SPLabel
             // 
@@ -281,6 +297,8 @@ namespace Intel_8086
             this.SP_text.Name = "SP_text";
             this.SP_text.Size = new System.Drawing.Size(100, 20);
             this.SP_text.TabIndex = 22;
+            this.SP_text.Text = "0000";
+            this.SP_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // DISPLabel
             // 
@@ -297,6 +315,8 @@ namespace Intel_8086
             this.DISP_text.Name = "DISP_text";
             this.DISP_text.Size = new System.Drawing.Size(100, 20);
             this.DISP_text.TabIndex = 24;
+            this.DISP_text.Text = "0000";
+            this.DISP_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // checkBox7
             // 
@@ -334,6 +354,8 @@ namespace Intel_8086
             this.BX_text_2.Name = "BX_text_2";
             this.BX_text_2.Size = new System.Drawing.Size(100, 20);
             this.BX_text_2.TabIndex = 30;
+            this.BX_text_2.Text = "0000";
+            this.BX_text_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // CX_text_2
             // 
@@ -341,6 +363,8 @@ namespace Intel_8086
             this.CX_text_2.Name = "CX_text_2";
             this.CX_text_2.Size = new System.Drawing.Size(100, 20);
             this.CX_text_2.TabIndex = 31;
+            this.CX_text_2.Text = "0000";
+            this.CX_text_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // DX_text_2
             // 
@@ -348,6 +372,8 @@ namespace Intel_8086
             this.DX_text_2.Name = "DX_text_2";
             this.DX_text_2.Size = new System.Drawing.Size(100, 20);
             this.DX_text_2.TabIndex = 32;
+            this.DX_text_2.Text = "0000";
+            this.DX_text_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // SI_text_2
             // 
@@ -355,6 +381,8 @@ namespace Intel_8086
             this.SI_text_2.Name = "SI_text_2";
             this.SI_text_2.Size = new System.Drawing.Size(100, 20);
             this.SI_text_2.TabIndex = 33;
+            this.SI_text_2.Text = "0000";
+            this.SI_text_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // DI_text_2
             // 
@@ -362,6 +390,8 @@ namespace Intel_8086
             this.DI_text_2.Name = "DI_text_2";
             this.DI_text_2.Size = new System.Drawing.Size(100, 20);
             this.DI_text_2.TabIndex = 34;
+            this.DI_text_2.Text = "0000";
+            this.DI_text_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // BP_text_2
             // 
@@ -369,6 +399,8 @@ namespace Intel_8086
             this.BP_text_2.Name = "BP_text_2";
             this.BP_text_2.Size = new System.Drawing.Size(100, 20);
             this.BP_text_2.TabIndex = 35;
+            this.BP_text_2.Text = "0000";
+            this.BP_text_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // SP_text_2
             // 
@@ -376,6 +408,8 @@ namespace Intel_8086
             this.SP_text_2.Name = "SP_text_2";
             this.SP_text_2.Size = new System.Drawing.Size(100, 20);
             this.SP_text_2.TabIndex = 36;
+            this.SP_text_2.Text = "0000";
+            this.SP_text_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // DISP_text_2
             // 
@@ -383,6 +417,8 @@ namespace Intel_8086
             this.DISP_text_2.Name = "DISP_text_2";
             this.DISP_text_2.Size = new System.Drawing.Size(100, 20);
             this.DISP_text_2.TabIndex = 37;
+            this.DISP_text_2.Text = "0000";
+            this.DISP_text_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Mem_Xchg
             // 
@@ -724,6 +760,7 @@ namespace Intel_8086
             this.Show_Memory.TabIndex = 84;
             this.Show_Memory.Text = "Show";
             this.Show_Memory.UseVisualStyleBackColor = true;
+            this.Show_Memory.Click += new System.EventHandler(this.Show_Memory_Click);
             // 
             // groupBox1
             // 
@@ -759,223 +796,223 @@ namespace Intel_8086
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.Inedex_base);
-            this.groupBox2.Controls.Add(this.Base);
-            this.groupBox2.Controls.Add(this.Index);
+            this.groupBox2.Controls.Add(this.Index_base_check);
+            this.groupBox2.Controls.Add(this.Base_check);
+            this.groupBox2.Controls.Add(this.Index_check);
             this.groupBox2.Location = new System.Drawing.Point(265, 80);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(161, 99);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             // 
-            // Inedex_base
+            // Index_base_check
             // 
-            this.Inedex_base.AutoSize = true;
-            this.Inedex_base.Location = new System.Drawing.Point(7, 65);
-            this.Inedex_base.Name = "Inedex_base";
-            this.Inedex_base.Size = new System.Drawing.Size(115, 17);
-            this.Inedex_base.TabIndex = 17;
-            this.Inedex_base.TabStop = true;
-            this.Inedex_base.Text = "indeksowo-bazowy";
-            this.Inedex_base.UseVisualStyleBackColor = true;
+            this.Index_base_check.AutoSize = true;
+            this.Index_base_check.Location = new System.Drawing.Point(7, 65);
+            this.Index_base_check.Name = "Index_base_check";
+            this.Index_base_check.Size = new System.Drawing.Size(115, 17);
+            this.Index_base_check.TabIndex = 17;
+            this.Index_base_check.TabStop = true;
+            this.Index_base_check.Text = "indeksowo-bazowy";
+            this.Index_base_check.UseVisualStyleBackColor = true;
             // 
-            // Base
+            // Base_check
             // 
-            this.Base.AutoSize = true;
-            this.Base.Location = new System.Drawing.Point(6, 42);
-            this.Base.Name = "Base";
-            this.Base.Size = new System.Drawing.Size(61, 17);
-            this.Base.TabIndex = 16;
-            this.Base.TabStop = true;
-            this.Base.Text = "bazowy";
-            this.Base.UseVisualStyleBackColor = true;
+            this.Base_check.AutoSize = true;
+            this.Base_check.Location = new System.Drawing.Point(6, 42);
+            this.Base_check.Name = "Base_check";
+            this.Base_check.Size = new System.Drawing.Size(61, 17);
+            this.Base_check.TabIndex = 16;
+            this.Base_check.TabStop = true;
+            this.Base_check.Text = "bazowy";
+            this.Base_check.UseVisualStyleBackColor = true;
             // 
-            // Index
+            // Index_check
             // 
-            this.Index.AutoSize = true;
-            this.Index.Location = new System.Drawing.Point(6, 19);
-            this.Index.Name = "Index";
-            this.Index.Size = new System.Drawing.Size(75, 17);
-            this.Index.TabIndex = 15;
-            this.Index.TabStop = true;
-            this.Index.Text = "indeksowy";
-            this.Index.UseVisualStyleBackColor = true;
+            this.Index_check.AutoSize = true;
+            this.Index_check.Location = new System.Drawing.Point(6, 19);
+            this.Index_check.Name = "Index_check";
+            this.Index_check.Size = new System.Drawing.Size(75, 17);
+            this.Index_check.TabIndex = 15;
+            this.Index_check.TabStop = true;
+            this.Index_check.Text = "indeksowy";
+            this.Index_check.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.DI);
-            this.groupBox3.Controls.Add(this.SI);
+            this.groupBox3.Controls.Add(this.DI_check);
+            this.groupBox3.Controls.Add(this.SI_check);
             this.groupBox3.Location = new System.Drawing.Point(265, 185);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(81, 88);
             this.groupBox3.TabIndex = 86;
             this.groupBox3.TabStop = false;
             // 
-            // DI
+            // DI_check
             // 
-            this.DI.AutoSize = true;
-            this.DI.Location = new System.Drawing.Point(6, 42);
-            this.DI.Name = "DI";
-            this.DI.Size = new System.Drawing.Size(36, 17);
-            this.DI.TabIndex = 44;
-            this.DI.TabStop = true;
-            this.DI.Text = "DI";
-            this.DI.UseVisualStyleBackColor = true;
+            this.DI_check.AutoSize = true;
+            this.DI_check.Location = new System.Drawing.Point(6, 42);
+            this.DI_check.Name = "DI_check";
+            this.DI_check.Size = new System.Drawing.Size(36, 17);
+            this.DI_check.TabIndex = 44;
+            this.DI_check.TabStop = true;
+            this.DI_check.Text = "DI";
+            this.DI_check.UseVisualStyleBackColor = true;
             // 
-            // SI
+            // SI_check
             // 
-            this.SI.AutoSize = true;
-            this.SI.Location = new System.Drawing.Point(6, 19);
-            this.SI.Name = "SI";
-            this.SI.Size = new System.Drawing.Size(35, 17);
-            this.SI.TabIndex = 43;
-            this.SI.TabStop = true;
-            this.SI.Text = "SI";
-            this.SI.UseVisualStyleBackColor = true;
+            this.SI_check.AutoSize = true;
+            this.SI_check.Location = new System.Drawing.Point(6, 19);
+            this.SI_check.Name = "SI_check";
+            this.SI_check.Size = new System.Drawing.Size(35, 17);
+            this.SI_check.TabIndex = 43;
+            this.SI_check.TabStop = true;
+            this.SI_check.Text = "SI";
+            this.SI_check.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.AX);
-            this.groupBox4.Controls.Add(this.DX);
-            this.groupBox4.Controls.Add(this.CX);
-            this.groupBox4.Controls.Add(this.BX);
+            this.groupBox4.Controls.Add(this.AX_check);
+            this.groupBox4.Controls.Add(this.DX_check);
+            this.groupBox4.Controls.Add(this.CX_check);
+            this.groupBox4.Controls.Add(this.BX_check);
             this.groupBox4.Location = new System.Drawing.Point(352, 186);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(74, 110);
             this.groupBox4.TabIndex = 87;
             this.groupBox4.TabStop = false;
             // 
-            // AX
+            // AX_check
             // 
-            this.AX.AutoSize = true;
-            this.AX.Location = new System.Drawing.Point(6, 19);
-            this.AX.Name = "AX";
-            this.AX.Size = new System.Drawing.Size(39, 17);
-            this.AX.TabIndex = 46;
-            this.AX.TabStop = true;
-            this.AX.Text = "AX";
-            this.AX.UseVisualStyleBackColor = true;
+            this.AX_check.AutoSize = true;
+            this.AX_check.Location = new System.Drawing.Point(6, 19);
+            this.AX_check.Name = "AX_check";
+            this.AX_check.Size = new System.Drawing.Size(39, 17);
+            this.AX_check.TabIndex = 46;
+            this.AX_check.TabStop = true;
+            this.AX_check.Text = "AX";
+            this.AX_check.UseVisualStyleBackColor = true;
             // 
-            // DX
+            // DX_check
             // 
-            this.DX.AutoSize = true;
-            this.DX.Location = new System.Drawing.Point(6, 88);
-            this.DX.Name = "DX";
-            this.DX.Size = new System.Drawing.Size(40, 17);
-            this.DX.TabIndex = 45;
-            this.DX.TabStop = true;
-            this.DX.Text = "DX";
-            this.DX.UseVisualStyleBackColor = true;
+            this.DX_check.AutoSize = true;
+            this.DX_check.Location = new System.Drawing.Point(6, 88);
+            this.DX_check.Name = "DX_check";
+            this.DX_check.Size = new System.Drawing.Size(40, 17);
+            this.DX_check.TabIndex = 45;
+            this.DX_check.TabStop = true;
+            this.DX_check.Text = "DX";
+            this.DX_check.UseVisualStyleBackColor = true;
             // 
-            // CX
+            // CX_check
             // 
-            this.CX.AutoSize = true;
-            this.CX.Location = new System.Drawing.Point(6, 65);
-            this.CX.Name = "CX";
-            this.CX.Size = new System.Drawing.Size(39, 17);
-            this.CX.TabIndex = 44;
-            this.CX.TabStop = true;
-            this.CX.Text = "CX";
-            this.CX.UseVisualStyleBackColor = true;
+            this.CX_check.AutoSize = true;
+            this.CX_check.Location = new System.Drawing.Point(6, 65);
+            this.CX_check.Name = "CX_check";
+            this.CX_check.Size = new System.Drawing.Size(39, 17);
+            this.CX_check.TabIndex = 44;
+            this.CX_check.TabStop = true;
+            this.CX_check.Text = "CX";
+            this.CX_check.UseVisualStyleBackColor = true;
             // 
-            // BX
+            // BX_check
             // 
-            this.BX.AutoSize = true;
-            this.BX.Location = new System.Drawing.Point(6, 42);
-            this.BX.Name = "BX";
-            this.BX.Size = new System.Drawing.Size(39, 17);
-            this.BX.TabIndex = 43;
-            this.BX.TabStop = true;
-            this.BX.Text = "BX";
-            this.BX.UseVisualStyleBackColor = true;
+            this.BX_check.AutoSize = true;
+            this.BX_check.Location = new System.Drawing.Point(6, 42);
+            this.BX_check.Name = "BX_check";
+            this.BX_check.Size = new System.Drawing.Size(39, 17);
+            this.BX_check.TabIndex = 43;
+            this.BX_check.TabStop = true;
+            this.BX_check.Text = "BX";
+            this.BX_check.UseVisualStyleBackColor = true;
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.BP);
-            this.groupBox5.Controls.Add(this.BX2);
+            this.groupBox5.Controls.Add(this.BP_check);
+            this.groupBox5.Controls.Add(this.BX2_check);
             this.groupBox5.Location = new System.Drawing.Point(265, 279);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(81, 63);
             this.groupBox5.TabIndex = 88;
             this.groupBox5.TabStop = false;
             // 
-            // BP
+            // BP_check
             // 
-            this.BP.AutoSize = true;
-            this.BP.Location = new System.Drawing.Point(7, 42);
-            this.BP.Name = "BP";
-            this.BP.Size = new System.Drawing.Size(39, 17);
-            this.BP.TabIndex = 46;
-            this.BP.TabStop = true;
-            this.BP.Text = "BP";
-            this.BP.UseVisualStyleBackColor = true;
+            this.BP_check.AutoSize = true;
+            this.BP_check.Location = new System.Drawing.Point(7, 42);
+            this.BP_check.Name = "BP_check";
+            this.BP_check.Size = new System.Drawing.Size(39, 17);
+            this.BP_check.TabIndex = 46;
+            this.BP_check.TabStop = true;
+            this.BP_check.Text = "BP";
+            this.BP_check.UseVisualStyleBackColor = true;
             // 
-            // BX2
+            // BX2_check
             // 
-            this.BX2.AutoSize = true;
-            this.BX2.Location = new System.Drawing.Point(6, 19);
-            this.BX2.Name = "BX2";
-            this.BX2.Size = new System.Drawing.Size(39, 17);
-            this.BX2.TabIndex = 45;
-            this.BX2.TabStop = true;
-            this.BX2.Text = "BX";
-            this.BX2.UseVisualStyleBackColor = true;
+            this.BX2_check.AutoSize = true;
+            this.BX2_check.Location = new System.Drawing.Point(6, 19);
+            this.BX2_check.Name = "BX2_check";
+            this.BX2_check.Size = new System.Drawing.Size(39, 17);
+            this.BX2_check.TabIndex = 45;
+            this.BX2_check.TabStop = true;
+            this.BX2_check.Text = "BX";
+            this.BX2_check.UseVisualStyleBackColor = true;
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.DI_BP);
-            this.groupBox6.Controls.Add(this.SI_BP);
-            this.groupBox6.Controls.Add(this.DX_BX);
-            this.groupBox6.Controls.Add(this.SI_BX);
+            this.groupBox6.Controls.Add(this.DI_BP_check);
+            this.groupBox6.Controls.Add(this.SI_BP_check);
+            this.groupBox6.Controls.Add(this.DI_BX_check);
+            this.groupBox6.Controls.Add(this.SI_BX_check);
             this.groupBox6.Location = new System.Drawing.Point(265, 348);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(81, 114);
             this.groupBox6.TabIndex = 89;
             this.groupBox6.TabStop = false;
             // 
-            // DI_BP
+            // DI_BP_check
             // 
-            this.DI_BP.AutoSize = true;
-            this.DI_BP.Location = new System.Drawing.Point(6, 88);
-            this.DI_BP.Name = "DI_BP";
-            this.DI_BP.Size = new System.Drawing.Size(58, 17);
-            this.DI_BP.TabIndex = 52;
-            this.DI_BP.TabStop = true;
-            this.DI_BP.Text = "DI i BP";
-            this.DI_BP.UseVisualStyleBackColor = true;
+            this.DI_BP_check.AutoSize = true;
+            this.DI_BP_check.Location = new System.Drawing.Point(6, 88);
+            this.DI_BP_check.Name = "DI_BP_check";
+            this.DI_BP_check.Size = new System.Drawing.Size(58, 17);
+            this.DI_BP_check.TabIndex = 52;
+            this.DI_BP_check.TabStop = true;
+            this.DI_BP_check.Text = "DI i BP";
+            this.DI_BP_check.UseVisualStyleBackColor = true;
             // 
-            // SI_BP
+            // SI_BP_check
             // 
-            this.SI_BP.AutoSize = true;
-            this.SI_BP.Location = new System.Drawing.Point(6, 65);
-            this.SI_BP.Name = "SI_BP";
-            this.SI_BP.Size = new System.Drawing.Size(57, 17);
-            this.SI_BP.TabIndex = 51;
-            this.SI_BP.TabStop = true;
-            this.SI_BP.Text = "SI i BP";
-            this.SI_BP.UseVisualStyleBackColor = true;
+            this.SI_BP_check.AutoSize = true;
+            this.SI_BP_check.Location = new System.Drawing.Point(6, 65);
+            this.SI_BP_check.Name = "SI_BP_check";
+            this.SI_BP_check.Size = new System.Drawing.Size(57, 17);
+            this.SI_BP_check.TabIndex = 51;
+            this.SI_BP_check.TabStop = true;
+            this.SI_BP_check.Text = "SI i BP";
+            this.SI_BP_check.UseVisualStyleBackColor = true;
             // 
-            // DX_BX
+            // DI_BX_check
             // 
-            this.DX_BX.AutoSize = true;
-            this.DX_BX.Location = new System.Drawing.Point(6, 42);
-            this.DX_BX.Name = "DX_BX";
-            this.DX_BX.Size = new System.Drawing.Size(58, 17);
-            this.DX_BX.TabIndex = 50;
-            this.DX_BX.TabStop = true;
-            this.DX_BX.Text = "DI i BX";
-            this.DX_BX.UseVisualStyleBackColor = true;
+            this.DI_BX_check.AutoSize = true;
+            this.DI_BX_check.Location = new System.Drawing.Point(6, 42);
+            this.DI_BX_check.Name = "DI_BX_check";
+            this.DI_BX_check.Size = new System.Drawing.Size(58, 17);
+            this.DI_BX_check.TabIndex = 50;
+            this.DI_BX_check.TabStop = true;
+            this.DI_BX_check.Text = "DI i BX";
+            this.DI_BX_check.UseVisualStyleBackColor = true;
             // 
-            // SI_BX
+            // SI_BX_check
             // 
-            this.SI_BX.AutoSize = true;
-            this.SI_BX.Location = new System.Drawing.Point(6, 19);
-            this.SI_BX.Name = "SI_BX";
-            this.SI_BX.Size = new System.Drawing.Size(57, 17);
-            this.SI_BX.TabIndex = 49;
-            this.SI_BX.TabStop = true;
-            this.SI_BX.Text = "SI i BX";
-            this.SI_BX.UseVisualStyleBackColor = true;
+            this.SI_BX_check.AutoSize = true;
+            this.SI_BX_check.Location = new System.Drawing.Point(6, 19);
+            this.SI_BX_check.Name = "SI_BX_check";
+            this.SI_BX_check.Size = new System.Drawing.Size(57, 17);
+            this.SI_BX_check.TabIndex = 49;
+            this.SI_BX_check.TabStop = true;
+            this.SI_BX_check.Text = "SI i BX";
+            this.SI_BX_check.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -1148,25 +1185,25 @@ namespace Intel_8086
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton Mem_To_Reg;
         private System.Windows.Forms.RadioButton Reg_To_Mem;
-        private System.Windows.Forms.RadioButton Inedex_base;
-        private System.Windows.Forms.RadioButton Base;
-        private System.Windows.Forms.RadioButton Index;
+        private System.Windows.Forms.RadioButton Index_base_check;
+        private System.Windows.Forms.RadioButton Base_check;
+        private System.Windows.Forms.RadioButton Index_check;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton DI;
-        private System.Windows.Forms.RadioButton SI;
+        private System.Windows.Forms.RadioButton DI_check;
+        private System.Windows.Forms.RadioButton SI_check;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.RadioButton DX;
-        private System.Windows.Forms.RadioButton CX;
-        private System.Windows.Forms.RadioButton BX;
+        private System.Windows.Forms.RadioButton DX_check;
+        private System.Windows.Forms.RadioButton CX_check;
+        private System.Windows.Forms.RadioButton BX_check;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.RadioButton BP;
-        private System.Windows.Forms.RadioButton BX2;
+        private System.Windows.Forms.RadioButton BP_check;
+        private System.Windows.Forms.RadioButton BX2_check;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.RadioButton DI_BP;
-        private System.Windows.Forms.RadioButton SI_BP;
-        private System.Windows.Forms.RadioButton DX_BX;
-        private System.Windows.Forms.RadioButton SI_BX;
-        private System.Windows.Forms.RadioButton AX;
+        private System.Windows.Forms.RadioButton DI_BP_check;
+        private System.Windows.Forms.RadioButton SI_BP_check;
+        private System.Windows.Forms.RadioButton DI_BX_check;
+        private System.Windows.Forms.RadioButton SI_BX_check;
+        private System.Windows.Forms.RadioButton AX_check;
     }
 }
 
