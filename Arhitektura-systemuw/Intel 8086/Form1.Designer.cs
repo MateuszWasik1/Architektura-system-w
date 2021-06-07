@@ -86,14 +86,14 @@ namespace Intel_8086
             this.XCHG_AX_DX = new System.Windows.Forms.Button();
             this.XCHG_AX_CX = new System.Windows.Forms.Button();
             this.XCHG_AX_BX = new System.Windows.Forms.Button();
-            this.button32 = new System.Windows.Forms.Button();
-            this.button33 = new System.Windows.Forms.Button();
-            this.button34 = new System.Windows.Forms.Button();
-            this.button35 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
-            this.button39 = new System.Windows.Forms.Button();
+            this.Push_AX = new System.Windows.Forms.Button();
+            this.Push_BX = new System.Windows.Forms.Button();
+            this.Push_CX = new System.Windows.Forms.Button();
+            this.Push_DX = new System.Windows.Forms.Button();
+            this.Pop_AX = new System.Windows.Forms.Button();
+            this.Pop_BX = new System.Windows.Forms.Button();
+            this.Pop_CX = new System.Windows.Forms.Button();
+            this.Pop_DX = new System.Windows.Forms.Button();
             this.Random2 = new System.Windows.Forms.Button();
             this.Show_Memory = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -670,77 +670,85 @@ namespace Intel_8086
             this.XCHG_AX_BX.UseVisualStyleBackColor = true;
             this.XCHG_AX_BX.Click += new System.EventHandler(this.XCHG_AX_BX_Click);
             // 
-            // button32
+            // Push_AX
             // 
-            this.button32.Location = new System.Drawing.Point(455, 303);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(75, 23);
-            this.button32.TabIndex = 75;
-            this.button32.Text = "PUSH AX";
-            this.button32.UseVisualStyleBackColor = true;
+            this.Push_AX.Location = new System.Drawing.Point(455, 303);
+            this.Push_AX.Name = "Push_AX";
+            this.Push_AX.Size = new System.Drawing.Size(75, 23);
+            this.Push_AX.TabIndex = 75;
+            this.Push_AX.Text = "PUSH AX";
+            this.Push_AX.UseVisualStyleBackColor = true;
+            this.Push_AX.Click += new System.EventHandler(this.Push_AX_Click);
             // 
-            // button33
+            // Push_BX
             // 
-            this.button33.Location = new System.Drawing.Point(455, 338);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(75, 23);
-            this.button33.TabIndex = 76;
-            this.button33.Text = "PUSH BX";
-            this.button33.UseVisualStyleBackColor = true;
+            this.Push_BX.Location = new System.Drawing.Point(455, 338);
+            this.Push_BX.Name = "Push_BX";
+            this.Push_BX.Size = new System.Drawing.Size(75, 23);
+            this.Push_BX.TabIndex = 76;
+            this.Push_BX.Text = "PUSH BX";
+            this.Push_BX.UseVisualStyleBackColor = true;
+            this.Push_BX.Click += new System.EventHandler(this.Push_BX_Click);
             // 
-            // button34
+            // Push_CX
             // 
-            this.button34.Location = new System.Drawing.Point(455, 378);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(75, 23);
-            this.button34.TabIndex = 77;
-            this.button34.Text = "PUSH CX";
-            this.button34.UseVisualStyleBackColor = true;
+            this.Push_CX.Location = new System.Drawing.Point(455, 378);
+            this.Push_CX.Name = "Push_CX";
+            this.Push_CX.Size = new System.Drawing.Size(75, 23);
+            this.Push_CX.TabIndex = 77;
+            this.Push_CX.Text = "PUSH CX";
+            this.Push_CX.UseVisualStyleBackColor = true;
+            this.Push_CX.Click += new System.EventHandler(this.Push_CX_Click);
             // 
-            // button35
+            // Push_DX
             // 
-            this.button35.Location = new System.Drawing.Point(455, 413);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(75, 23);
-            this.button35.TabIndex = 78;
-            this.button35.Text = "PUSH DX";
-            this.button35.UseVisualStyleBackColor = true;
+            this.Push_DX.Location = new System.Drawing.Point(455, 413);
+            this.Push_DX.Name = "Push_DX";
+            this.Push_DX.Size = new System.Drawing.Size(75, 23);
+            this.Push_DX.TabIndex = 78;
+            this.Push_DX.Text = "PUSH DX";
+            this.Push_DX.UseVisualStyleBackColor = true;
+            this.Push_DX.Click += new System.EventHandler(this.Push_DX_Click);
             // 
-            // button36
+            // Pop_AX
             // 
-            this.button36.Location = new System.Drawing.Point(573, 303);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(75, 23);
-            this.button36.TabIndex = 79;
-            this.button36.Text = "POP AX";
-            this.button36.UseVisualStyleBackColor = true;
+            this.Pop_AX.Location = new System.Drawing.Point(573, 303);
+            this.Pop_AX.Name = "Pop_AX";
+            this.Pop_AX.Size = new System.Drawing.Size(75, 23);
+            this.Pop_AX.TabIndex = 79;
+            this.Pop_AX.Text = "POP AX";
+            this.Pop_AX.UseVisualStyleBackColor = true;
+            this.Pop_AX.Click += new System.EventHandler(this.Pop_AX_Click);
             // 
-            // button37
+            // Pop_BX
             // 
-            this.button37.Location = new System.Drawing.Point(575, 340);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(75, 23);
-            this.button37.TabIndex = 80;
-            this.button37.Text = "POP BX";
-            this.button37.UseVisualStyleBackColor = true;
+            this.Pop_BX.Location = new System.Drawing.Point(575, 340);
+            this.Pop_BX.Name = "Pop_BX";
+            this.Pop_BX.Size = new System.Drawing.Size(75, 23);
+            this.Pop_BX.TabIndex = 80;
+            this.Pop_BX.Text = "POP BX";
+            this.Pop_BX.UseVisualStyleBackColor = true;
+            this.Pop_BX.Click += new System.EventHandler(this.Pop_BX_Click);
             // 
-            // button38
+            // Pop_CX
             // 
-            this.button38.Location = new System.Drawing.Point(575, 378);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(75, 23);
-            this.button38.TabIndex = 81;
-            this.button38.Text = "POP CX";
-            this.button38.UseVisualStyleBackColor = true;
+            this.Pop_CX.Location = new System.Drawing.Point(575, 378);
+            this.Pop_CX.Name = "Pop_CX";
+            this.Pop_CX.Size = new System.Drawing.Size(75, 23);
+            this.Pop_CX.TabIndex = 81;
+            this.Pop_CX.Text = "POP CX";
+            this.Pop_CX.UseVisualStyleBackColor = true;
+            this.Pop_CX.Click += new System.EventHandler(this.Pop_CX_Click);
             // 
-            // button39
+            // Pop_DX
             // 
-            this.button39.Location = new System.Drawing.Point(573, 413);
-            this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(75, 23);
-            this.button39.TabIndex = 82;
-            this.button39.Text = "POP DX";
-            this.button39.UseVisualStyleBackColor = true;
+            this.Pop_DX.Location = new System.Drawing.Point(573, 413);
+            this.Pop_DX.Name = "Pop_DX";
+            this.Pop_DX.Size = new System.Drawing.Size(75, 23);
+            this.Pop_DX.TabIndex = 82;
+            this.Pop_DX.Text = "POP DX";
+            this.Pop_DX.UseVisualStyleBackColor = true;
+            this.Pop_DX.Click += new System.EventHandler(this.Pop_DX_Click);
             // 
             // Random2
             // 
@@ -1028,14 +1036,14 @@ namespace Intel_8086
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Show_Memory);
             this.Controls.Add(this.Random2);
-            this.Controls.Add(this.button39);
-            this.Controls.Add(this.button38);
-            this.Controls.Add(this.button37);
-            this.Controls.Add(this.button36);
-            this.Controls.Add(this.button35);
-            this.Controls.Add(this.button34);
-            this.Controls.Add(this.button33);
-            this.Controls.Add(this.button32);
+            this.Controls.Add(this.Pop_DX);
+            this.Controls.Add(this.Pop_CX);
+            this.Controls.Add(this.Pop_BX);
+            this.Controls.Add(this.Pop_AX);
+            this.Controls.Add(this.Push_DX);
+            this.Controls.Add(this.Push_CX);
+            this.Controls.Add(this.Push_BX);
+            this.Controls.Add(this.Push_AX);
             this.Controls.Add(this.XCHG_DX_CX);
             this.Controls.Add(this.XCHG_DX_BX);
             this.Controls.Add(this.XCHG_DX_AX);
@@ -1171,14 +1179,14 @@ namespace Intel_8086
         private System.Windows.Forms.Button XCHG_AX_DX;
         private System.Windows.Forms.Button XCHG_AX_CX;
         private System.Windows.Forms.Button XCHG_AX_BX;
-        private System.Windows.Forms.Button button32;
-        private System.Windows.Forms.Button button33;
-        private System.Windows.Forms.Button button34;
-        private System.Windows.Forms.Button button35;
-        private System.Windows.Forms.Button button36;
-        private System.Windows.Forms.Button button37;
-        private System.Windows.Forms.Button button38;
-        private System.Windows.Forms.Button button39;
+        private System.Windows.Forms.Button Push_AX;
+        private System.Windows.Forms.Button Push_BX;
+        private System.Windows.Forms.Button Push_CX;
+        private System.Windows.Forms.Button Push_DX;
+        private System.Windows.Forms.Button Pop_AX;
+        private System.Windows.Forms.Button Pop_BX;
+        private System.Windows.Forms.Button Pop_CX;
+        private System.Windows.Forms.Button Pop_DX;
         private System.Windows.Forms.Button Random2;
         private System.Windows.Forms.Button Show_Memory;
         private System.Windows.Forms.GroupBox groupBox1;

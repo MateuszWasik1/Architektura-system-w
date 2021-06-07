@@ -29,14 +29,28 @@ namespace Intel_8086
                 }
                 
             }
-          
+
+            if (stackactiv != 1)
+            {
+                for (int i = 0; i < stack.Length; i++)
+                {
+                    stack[i] = "00";
+                    if (i == stack.Length)
+                    {
+                        stackactiv = 1;
+                    }
+                }
+
+            }
+
         }
-        
-     
-        
-        
+
+        string[] stack = new string[65536];
         string[] memory = new string[65536];
+
+        int stackactiv = 0;
         int memactiv = 0;
+
         
         private void Reset1_Click(object sender, EventArgs e)
         {
@@ -1291,16 +1305,72 @@ namespace Intel_8086
 
         }
 
+        private void Push_AX_Click(object sender, EventArgs e)
+        {
+
+
+
+        }
+
+        private void Push_BX_Click(object sender, EventArgs e)
+        {
+
+
+
+        }
+
+        private void Push_CX_Click(object sender, EventArgs e)
+        {
+
+
+
+        }
+
+        private void Push_DX_Click(object sender, EventArgs e)
+        {
+
+
+
+        }
+
+        private void Pop_AX_Click(object sender, EventArgs e)
+        {
+
+
+
+        }
+
+        private void Pop_BX_Click(object sender, EventArgs e)
+        {
+
+
+
+        }
+
+        private void Pop_CX_Click(object sender, EventArgs e)
+        {
+
+
+
+        }
+
+        private void Pop_DX_Click(object sender, EventArgs e)
+        {
+
+
+
+        }
+
         private void Show_Memory_Click(object sender, EventArgs e)
         {
 
-            for (int i = 0; i < memory.Length; i++)
+            for (int i = 0; i < stack.Length; i++)
             {
 
-                Console.WriteLine($"{i} {memory[i]}");
+                Console.WriteLine($"{i} {stack[i]}");
 
             }
-        
+
         }
     }
 }
