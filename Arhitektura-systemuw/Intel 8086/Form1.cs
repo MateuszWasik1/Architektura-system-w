@@ -16,7 +16,9 @@ namespace Intel_8086
         {
             
             InitializeComponent();
-            
+
+
+
             if (memactiv != 1)
             {
                 for (int i = 0; i < memory.Length; i++)
@@ -51,7 +53,7 @@ namespace Intel_8086
         int stackactiv = 0;
         int memactiv = 0;
 
-        
+
         private void Reset1_Click(object sender, EventArgs e)
         {
          
@@ -1308,69 +1310,327 @@ namespace Intel_8086
         private void Push_AX_Click(object sender, EventArgs e)
         {
 
+            int SP = int.Parse(SP_text.Text, System.Globalization.NumberStyles.HexNumber);
+            int SP2 = SP + 2;
 
+            string AX1 = AX_text.Text.Remove(2);
+            string AX2 = AX_text.Text.Substring(2);
+
+            stack[SP] = AX1;
+            stack[SP + 1] = AX2;
+
+            if (SP2 >= 256 && SP2 <= 4095)
+            {
+
+                SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+
+            }
+            if (SP2 >= 16 && SP2 <= 255)
+            {
+
+                SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
+
+            }
+            if (SP2 < 16)
+            {
+
+                SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
+
+            }
+            if (SP2 > 4095)
+            {
+
+                SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
+
+            }
+
+           
 
         }
 
         private void Push_BX_Click(object sender, EventArgs e)
         {
 
+            int SP = int.Parse(SP_text.Text, System.Globalization.NumberStyles.HexNumber);
+            int SP2 = SP + 2;
 
+            string BX1 = BX_text.Text.Remove(2);
+            string BX2 = BX_text.Text.Substring(2);
+
+            stack[SP] = BX1;
+            stack[SP + 1] = BX2;
+
+            if (SP2 >= 256 && SP2 <= 4095)
+            {
+
+                SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+
+            }
+            if (SP2 >= 16 && SP2 <= 255)
+            {
+
+                SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
+
+            }
+            if (SP2 < 16)
+            {
+
+                SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
+
+            }
+            if (SP2 > 4095)
+            {
+
+                SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
+
+            }
 
         }
 
         private void Push_CX_Click(object sender, EventArgs e)
         {
 
+            int SP = int.Parse(SP_text.Text, System.Globalization.NumberStyles.HexNumber);
+            int SP2 = SP + 2;
 
+            string CX1 = CX_text.Text.Remove(2);
+            string CX2 = CX_text.Text.Substring(2);
+
+            stack[SP] = CX1;
+            stack[SP + 1] = CX2;
+
+            if (SP2 >= 256 && SP2 <= 4095)
+            {
+
+                SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+
+            }
+            if (SP2 >= 16 && SP2 <= 255)
+            {
+
+                SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
+
+            }
+            if (SP2 < 16)
+            {
+
+                SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
+
+            }
+            if (SP2 > 4095)
+            {
+
+                SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
+
+            }
 
         }
 
         private void Push_DX_Click(object sender, EventArgs e)
         {
 
+            int SP = int.Parse(SP_text.Text, System.Globalization.NumberStyles.HexNumber);
+            int SP2 = SP + 2;
 
+            string DX1 = DX_text.Text.Remove(2);
+            string DX2 = DX_text.Text.Substring(2);
+
+            stack[SP] = DX1;
+            stack[SP + 1] = DX2;
+
+
+            if (SP2 >= 256 && SP2 <= 4095)
+            {
+
+                SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+
+            }
+            if (SP2 >= 16 && SP2 <= 255)
+            {
+
+                SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
+
+            }
+            if (SP2 < 16)
+            {
+
+                SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
+
+            }
+            if (SP2 > 4095)
+            {
+
+                SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
+
+            }
 
         }
 
         private void Pop_AX_Click(object sender, EventArgs e)
         {
 
+            int SP = int.Parse(SP_text.Text, System.Globalization.NumberStyles.HexNumber);
+            int SP2 = SP - 2;
 
+            AX_text.Text = stack[SP2] + stack[SP2 + 1];
+
+            stack[SP2] = "00";
+            stack[SP2 + 1] = "00";
+
+            if (SP2 >= 256 && SP2 <= 4095)
+            {
+
+                SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+
+            }
+            if (SP2 >= 16 && SP2 <= 255)
+            {
+
+                SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
+
+            }
+            if (SP2 < 16)
+            {
+
+                SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
+
+            }
+            if (SP2 > 4095)
+            {
+
+                SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
+
+            }
 
         }
 
         private void Pop_BX_Click(object sender, EventArgs e)
         {
 
+            int SP = int.Parse(SP_text.Text, System.Globalization.NumberStyles.HexNumber);
+            int SP2 = SP - 2;
 
+            BX_text.Text = stack[SP2] + stack[SP2 + 1];
+
+            stack[SP2] = "00";
+            stack[SP2 + 1] = "00";
+
+            if (SP2 >= 256 && SP2 <= 4095)
+            {
+
+                SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+
+            }
+            if (SP2 >= 16 && SP2 <= 255)
+            {
+
+                SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
+
+            }
+            if (SP2 < 16)
+            {
+
+                SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
+
+            }
+            if (SP2 > 4095)
+            {
+
+                SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
+
+            }
 
         }
 
         private void Pop_CX_Click(object sender, EventArgs e)
         {
 
+            int SP = int.Parse(SP_text.Text, System.Globalization.NumberStyles.HexNumber);
+            int SP2 = SP - 2;
 
+            CX_text.Text = stack[SP2] + stack[SP2 + 1];
+
+            stack[SP2] = "00";
+            stack[SP2+1] = "00";
+
+            if (SP2 >= 256 && SP2 <= 4095)
+            {
+
+                SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+
+            }
+            if (SP2 >= 16 && SP2 <= 255)
+            {
+
+                SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
+
+            }
+            if (SP2 < 16)
+            {
+
+                SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
+
+            }
+            if (SP2 > 4095)
+            {
+
+                SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
+
+            }
 
         }
 
         private void Pop_DX_Click(object sender, EventArgs e)
         {
 
+            int SP = int.Parse(SP_text.Text, System.Globalization.NumberStyles.HexNumber);
+            int SP2 = SP - 2;
 
+            DX_text.Text = stack[SP2] + stack[SP2 + 1];
+
+            stack[SP2] = "00";
+            stack[SP2 + 1] = "00";
+
+            if (SP2 >= 256 && SP2 <= 4095)
+            {
+
+                SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+
+            }
+            if (SP2 >= 16 && SP2 <= 255)
+            {
+
+                SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
+
+            }
+            if (SP2 < 16)
+            {
+
+                SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
+
+            }
+            if (SP2 > 4095)
+            {
+
+                SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
+
+            }
 
         }
 
         private void Show_Memory_Click(object sender, EventArgs e)
         {
+        
 
-            for (int i = 0; i < stack.Length; i++)
+            for (int i = 0; i < 10; i++)
             {
+                
 
                 Console.WriteLine($"{i} {stack[i]}");
 
             }
 
         }
+        
     }
 }
