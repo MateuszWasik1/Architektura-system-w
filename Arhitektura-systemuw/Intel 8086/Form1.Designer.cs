@@ -330,7 +330,7 @@ namespace Intel_8086
             // 
             // Reset2
             // 
-            this.Reset2.Location = new System.Drawing.Point(459, 12);
+            this.Reset2.Location = new System.Drawing.Point(481, 12);
             this.Reset2.Name = "Reset2";
             this.Reset2.Size = new System.Drawing.Size(75, 23);
             this.Reset2.TabIndex = 28;
@@ -752,7 +752,7 @@ namespace Intel_8086
             // 
             // Random2
             // 
-            this.Random2.Location = new System.Drawing.Point(540, 12);
+            this.Random2.Location = new System.Drawing.Point(562, 12);
             this.Random2.Name = "Random2";
             this.Random2.Size = new System.Drawing.Size(75, 23);
             this.Random2.TabIndex = 83;
@@ -762,12 +762,13 @@ namespace Intel_8086
             // 
             // Show_Memory
             // 
-            this.Show_Memory.Location = new System.Drawing.Point(621, 12);
+            this.Show_Memory.Location = new System.Drawing.Point(643, 12);
             this.Show_Memory.Name = "Show_Memory";
-            this.Show_Memory.Size = new System.Drawing.Size(75, 23);
+            this.Show_Memory.Size = new System.Drawing.Size(53, 23);
             this.Show_Memory.TabIndex = 84;
             this.Show_Memory.Text = "Show";
             this.Show_Memory.UseVisualStyleBackColor = true;
+            this.Show_Memory.Visible = false;
             this.Show_Memory.Click += new System.EventHandler(this.Show_Memory_Click);
             // 
             // groupBox1
@@ -783,7 +784,7 @@ namespace Intel_8086
             // Mem_To_Reg
             // 
             this.Mem_To_Reg.AutoSize = true;
-            this.Mem_To_Reg.Location = new System.Drawing.Point(6, 19);
+            this.Mem_To_Reg.Location = new System.Drawing.Point(6, 42);
             this.Mem_To_Reg.Name = "Mem_To_Reg";
             this.Mem_To_Reg.Size = new System.Drawing.Size(123, 17);
             this.Mem_To_Reg.TabIndex = 13;
@@ -794,7 +795,7 @@ namespace Intel_8086
             // Reg_To_Mem
             // 
             this.Reg_To_Mem.AutoSize = true;
-            this.Reg_To_Mem.Location = new System.Drawing.Point(6, 41);
+            this.Reg_To_Mem.Location = new System.Drawing.Point(6, 19);
             this.Reg_To_Mem.Name = "Reg_To_Mem";
             this.Reg_To_Mem.Size = new System.Drawing.Size(123, 17);
             this.Reg_To_Mem.TabIndex = 12;

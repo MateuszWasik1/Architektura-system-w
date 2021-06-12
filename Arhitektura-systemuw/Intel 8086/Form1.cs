@@ -415,25 +415,56 @@ namespace Intel_8086
                         if (AX_check.Checked == true)
                         {
 
-                            AX_text.Text = memory[inedx_SI_DISP] + memory[inedx_SI_DISP + 1];
+                            if (inedx_SI_DISP <= 65534)
+                            {
+                                AX_text.Text = memory[inedx_SI_DISP] + memory[inedx_SI_DISP + 1];
+                            }
+                            else if (inedx_SI_DISP <= 65535)
+                            {
+                                AX_text.Text = memory[inedx_SI_DISP] + "00";
+                            }
+
+                           
 
                         }
                         if (BX_check.Checked ==true)
                         {
 
-                            BX_text.Text = memory[inedx_SI_DISP] + memory[inedx_SI_DISP + 1];
+                            if (inedx_SI_DISP <= 65534)
+                            {
+                                BX_text.Text = memory[inedx_SI_DISP] + memory[inedx_SI_DISP + 1];
+                            }
+                            else if (inedx_SI_DISP <= 65535)
+                            {
+                                BX_text.Text = memory[inedx_SI_DISP] + "00";
+                            }
+
 
                         }
                         if (CX_check.Checked == true)
                         {
 
-                            CX_text.Text = memory[inedx_SI_DISP] + memory[inedx_SI_DISP + 1];
+                            if (inedx_SI_DISP <= 65534)
+                            {
+                                CX_text.Text = memory[inedx_SI_DISP] + memory[inedx_SI_DISP + 1];
+                            }
+                            else if (inedx_SI_DISP <= 65535)
+                            {
+                                CX_text.Text = memory[inedx_SI_DISP] + "00";
+                            }
 
                         }
                         if (DX_check.Checked == true)
                         {
 
-                           DX_text.Text = memory[inedx_SI_DISP] + memory[inedx_SI_DISP + 1];
+                            if (inedx_SI_DISP <= 65534)
+                            {
+                                DX_text.Text = memory[inedx_SI_DISP] + memory[inedx_SI_DISP + 1];
+                            }
+                            else if (inedx_SI_DISP <= 65535)
+                            {
+                                DX_text.Text = memory[inedx_SI_DISP] + "00";
+                            }
 
                         }
 
@@ -444,25 +475,51 @@ namespace Intel_8086
                         if (AX_check.Checked == true)
                         {
 
-                            AX_text.Text = memory[inedx_DI_DISP] + memory[inedx_DI_DISP + 1];
+                            
+                            if (inedx_DI_DISP <= 65534)
+                            {
+                                AX_text.Text = memory[inedx_DI_DISP] + memory[inedx_DI_DISP + 1];
+                            }
+                            else if (inedx_DI_DISP <= 65535)
+                            {
+                                AX_text.Text = memory[inedx_DI_DISP] + "00";
+                            }
 
                         }
                         if (BX_check.Checked == true)
                         {
-
-                            BX_text.Text = memory[inedx_DI_DISP] + memory[inedx_DI_DISP + 1];
+                            if (inedx_DI_DISP <= 65534)
+                            {
+                                BX_text.Text = memory[inedx_DI_DISP] + memory[inedx_DI_DISP + 1];
+                            }
+                            else if (inedx_DI_DISP <= 65535)
+                            {
+                                BX_text.Text = memory[inedx_DI_DISP] + "00";
+                            }
 
                         }
                         if (CX_check.Checked == true)
                         {
-
-                            CX_text.Text = memory[inedx_DI_DISP] + memory[inedx_DI_DISP + 1];
+                            if (inedx_DI_DISP <= 65534)
+                            {
+                                CX_text.Text = memory[inedx_DI_DISP] + memory[inedx_DI_DISP + 1];
+                            }
+                            else if (inedx_DI_DISP <= 65535)
+                            {
+                                CX_text.Text = memory[inedx_DI_DISP] + "00";
+                            }
 
                         }
                         if (DX_check.Checked == true)
                         {
-
-                            DX_text.Text = memory[inedx_DI_DISP] + memory[inedx_DI_DISP + 1];
+                            if (inedx_DI_DISP <= 65534)
+                            {
+                                DX_text.Text = memory[inedx_DI_DISP] + memory[inedx_DI_DISP + 1];
+                            }
+                            else if (inedx_DI_DISP <= 65535)
+                            {
+                                DX_text.Text = memory[inedx_DI_DISP] + "00";
+                            }
 
                         }
 
@@ -478,26 +535,51 @@ namespace Intel_8086
 
                         if (AX_check.Checked == true)
                         {
-
-                            AX_text.Text = memory[bsae_BX_DISP] + memory[bsae_BX_DISP + 1];
+                            if (inedx_DI_DISP <= 65534)
+                            {
+                                AX_text.Text = memory[bsae_BX_DISP] + memory[bsae_BX_DISP + 1];
+                            }
+                            else if (inedx_DI_DISP <= 65535)
+                            {
+                                AX_text.Text = memory[bsae_BX_DISP] + "00";
+                            }
 
                         }
                         if (BX_check.Checked == true)
                         {
 
-                            BX_text.Text = memory[bsae_BX_DISP] + memory[bsae_BX_DISP + 1];
+                            if (inedx_DI_DISP <= 65534)
+                            {
+                                BX_text.Text = memory[bsae_BX_DISP] + memory[bsae_BX_DISP + 1];
+                            }
+                            else if (inedx_DI_DISP <= 65535)
+                            {
+                                BX_text.Text = memory[bsae_BX_DISP] + "00";
+                            }
                             
                         }
                         if (CX_check.Checked == true)
                         {
-
-                            CX_text.Text = memory[bsae_BX_DISP] + memory[bsae_BX_DISP + 1];
+                            if (inedx_DI_DISP <= 65534)
+                            {
+                                CX_text.Text = memory[bsae_BX_DISP] + memory[bsae_BX_DISP + 1];
+                            }
+                            else if (inedx_DI_DISP <= 65535)
+                            {
+                                CX_text.Text = memory[bsae_BX_DISP] + "00";
+                            }
 
                         }
                         if (DX_check.Checked == true)
                         {
-
-                            DX_text.Text = memory[bsae_BX_DISP] + memory[bsae_BX_DISP + 1];
+                            if (inedx_DI_DISP <= 65534)
+                            {
+                                DX_text.Text = memory[bsae_BX_DISP] + memory[bsae_BX_DISP + 1];
+                            }
+                            else if (inedx_DI_DISP <= 65535)
+                            {
+                                DX_text.Text = memory[bsae_BX_DISP] + "00";
+                            }
 
                         }
 
@@ -542,26 +624,51 @@ namespace Intel_8086
 
                         if (AX_check.Checked == true)
                         {
-
-                            AX_text.Text = memory[index_base_SI_BX_DISP] + memory[index_base_SI_BX_DISP + 1];
+                            if (index_base_SI_BX_DISP <= 65534)
+                            {
+                                AX_text.Text = memory[index_base_SI_BX_DISP] + memory[index_base_SI_BX_DISP + 1];
+                            }
+                            else if (index_base_SI_BX_DISP <= 65535)
+                            {
+                                AX_text.Text = memory[index_base_SI_BX_DISP] + "00";
+                            }
+                            
 
                         }
                         if (BX_check.Checked == true)
                         {
-
-                            BX_text.Text = memory[index_base_SI_BX_DISP] + memory[index_base_SI_BX_DISP + 1];
+                            if (index_base_SI_BX_DISP <= 65534)
+                            {
+                                BX_text.Text = memory[index_base_SI_BX_DISP] + memory[index_base_SI_BX_DISP + 1];
+                            }
+                            else if (index_base_SI_BX_DISP <= 65535)
+                            {
+                                BX_text.Text = memory[index_base_SI_BX_DISP] + "00";
+                            }
 
                         }
                         if (CX_check.Checked == true)
                         {
-
-                            CX_text.Text = memory[index_base_SI_BX_DISP] + memory[index_base_SI_BX_DISP + 1];                       
+                            if (index_base_SI_BX_DISP <= 65534)
+                            {
+                                CX_text.Text = memory[index_base_SI_BX_DISP] + memory[index_base_SI_BX_DISP + 1];
+                            }
+                            else if (index_base_SI_BX_DISP <= 65535)
+                            {
+                                CX_text.Text = memory[index_base_SI_BX_DISP] + "00";
+                            }
 
                         }
                         if (DX_check.Checked == true)
                         {
-
-                            DX_text.Text = memory[index_base_SI_BX_DISP] + memory[index_base_SI_BX_DISP + 1];
+                            if (index_base_SI_BX_DISP <= 65534)
+                            {
+                                DX_text.Text = memory[index_base_SI_BX_DISP] + memory[index_base_SI_BX_DISP + 1];
+                            }
+                            else if (index_base_SI_BX_DISP <= 65535)
+                            {
+                                DX_text.Text = memory[index_base_SI_BX_DISP] + "00";
+                            }
 
                         }
 
@@ -572,26 +679,51 @@ namespace Intel_8086
 
                         if (AX_check.Checked == true)
                         {
-
-                            AX_text.Text = memory[index_base_DI_BX_DISP] + memory[index_base_DI_BX_DISP + 1];
+                            if (index_base_DI_BX_DISP <= 65534)
+                            {
+                                AX_text.Text = memory[index_base_DI_BX_DISP] + memory[index_base_DI_BX_DISP + 1];
+                            }
+                            else if (index_base_DI_BX_DISP <= 65535)
+                            {
+                                AX_text.Text = memory[index_base_DI_BX_DISP] + "00";
+                            }
+                            
 
                         }
                         if (BX_check.Checked == true)
                         {
-
-                            BX_text.Text = memory[index_base_DI_BX_DISP] + memory[index_base_DI_BX_DISP + 1];
+                            if (index_base_DI_BX_DISP <= 65534)
+                            {
+                                BX_text.Text = memory[index_base_DI_BX_DISP] + memory[index_base_DI_BX_DISP + 1];
+                            }
+                            else if (index_base_DI_BX_DISP <= 65535)
+                            {
+                                BX_text.Text = memory[index_base_DI_BX_DISP] + "00";
+                            }
 
                         }
                         if (CX_check.Checked == true)
                         {
-
-                            CX_text.Text = memory[index_base_DI_BX_DISP] + memory[index_base_DI_BX_DISP + 1];
+                            if (index_base_DI_BX_DISP <= 65534)
+                            {
+                                CX_text.Text = memory[index_base_DI_BX_DISP] + memory[index_base_DI_BX_DISP + 1];
+                            }
+                            else if (index_base_DI_BX_DISP <= 65535)
+                            {
+                                CX_text.Text = memory[index_base_DI_BX_DISP] + "00";
+                            }
 
                         }
                         if (DX_check.Checked == true)
                         {
-
-                            DX_text.Text = memory[index_base_DI_BX_DISP] + memory[index_base_DI_BX_DISP + 1];
+                            if (index_base_DI_BX_DISP <= 65534)
+                            {
+                                DX_text.Text = memory[index_base_DI_BX_DISP] + memory[index_base_DI_BX_DISP + 1];
+                            }
+                            else if (index_base_DI_BX_DISP <= 65535)
+                            {
+                                DX_text.Text = memory[index_base_DI_BX_DISP] + "00";
+                            }
 
                         }
 
@@ -602,26 +734,53 @@ namespace Intel_8086
 
                         if (AX_check.Checked == true)
                         {
-
-                            AX_text.Text = memory[index_base_SI_BP_DISP] + memory[index_base_SI_BP_DISP + 1];
+                            if (index_base_SI_BP_DISP <= 65534)
+                            {
+                                AX_text.Text = memory[index_base_SI_BP_DISP] + memory[index_base_SI_BP_DISP + 1];
+                            }
+                            else if (index_base_SI_BP_DISP <= 65535)
+                            {
+                                AX_text.Text = memory[index_base_SI_BP_DISP] + "00";
+                            }
 
                         }
                         if (BX_check.Checked == true)
                         {
 
-                            BX_text.Text = memory[index_base_SI_BP_DISP] + memory[index_base_SI_BP_DISP + 1];
+                            if (index_base_SI_BP_DISP <= 65534)
+                            {
+                                BX_text.Text = memory[index_base_SI_BP_DISP] + memory[index_base_SI_BP_DISP + 1];
+                            }
+                            else if (index_base_SI_BP_DISP <= 65535)
+                            {
+                                BX_text.Text = memory[index_base_SI_BP_DISP] + "00";
+                            }
 
                         }
                         if (CX_check.Checked == true)
                         {
 
-                            CX_text.Text = memory[index_base_SI_BP_DISP] + memory[index_base_SI_BP_DISP + 1];
+                            if (index_base_SI_BP_DISP <= 65534)
+                            {
+                                CX_text.Text = memory[index_base_SI_BP_DISP] + memory[index_base_SI_BP_DISP + 1];
+                            }
+                            else if (index_base_SI_BP_DISP <= 65535)
+                            {
+                                CX_text.Text = memory[index_base_SI_BP_DISP] + "00";
+                            }
 
                         }
                         if (DX_check.Checked == true)
                         {
 
-                            DX_text.Text = memory[index_base_SI_BP_DISP] + memory[index_base_SI_BP_DISP + 1];
+                            if (index_base_SI_BP_DISP <= 65534)
+                            {
+                                DX_text.Text = memory[index_base_SI_BP_DISP] + memory[index_base_SI_BP_DISP + 1];
+                            }
+                            else if (index_base_SI_BP_DISP <= 65535)
+                            {
+                                DX_text.Text = memory[index_base_SI_BP_DISP] + "00";
+                            }
 
                         }
 
@@ -633,25 +792,50 @@ namespace Intel_8086
                         if (AX_check.Checked == true)
                         {
 
-                            AX_text.Text = memory[index_base_DI_BP_DISP] + memory[index_base_DI_BP_DISP + 1];
+                            if (index_base_DI_BP_DISP <= 65534)
+                            {
+                                AX_text.Text = memory[index_base_DI_BP_DISP] + memory[index_base_DI_BP_DISP + 1];
+                            }
+                            else if (index_base_DI_BP_DISP <= 65535)
+                            {
+                                AX_text.Text = memory[index_base_DI_BP_DISP] + "00";
+                            }
 
                         }
                         if (BX_check.Checked == true)
                         {
-
-                            BX_text.Text = memory[index_base_DI_BP_DISP] + memory[index_base_DI_BP_DISP + 1];
-
+                            if (index_base_DI_BP_DISP <= 65534)
+                            {
+                                BX_text.Text = memory[index_base_DI_BP_DISP] + memory[index_base_DI_BP_DISP + 1];
+                            }
+                            else if (index_base_DI_BP_DISP <= 65535)
+                            {
+                                BX_text.Text = memory[index_base_DI_BP_DISP] + "00";
+                            }
+                        
                         }
                         if (CX_check.Checked == true)
                         {
-
-                            CX_text.Text = memory[index_base_DI_BP_DISP] + memory[index_base_DI_BP_DISP + 1];
+                            if (index_base_DI_BP_DISP <= 65534)
+                            {
+                                CX_text.Text = memory[index_base_DI_BP_DISP] + memory[index_base_DI_BP_DISP + 1];
+                            }
+                            else if (index_base_DI_BP_DISP <= 65535)
+                            {
+                                CX_text.Text = memory[index_base_DI_BP_DISP] + "00";
+                            }
 
                         }
                         if (DX_check.Checked == true)
                         {
-
-                            DX_text.Text = memory[index_base_DI_BP_DISP] + memory[index_base_DI_BP_DISP + 1];
+                            if (index_base_DI_BP_DISP <= 65534)
+                            {
+                                DX_text.Text = memory[index_base_DI_BP_DISP] + memory[index_base_DI_BP_DISP + 1];
+                            }
+                            else if (index_base_DI_BP_DISP <= 65535)
+                            {
+                                DX_text.Text = memory[index_base_DI_BP_DISP] + "00";
+                            }
 
                         }
 
@@ -673,29 +857,55 @@ namespace Intel_8086
                         if (AX_check.Checked == true)
                         {
 
-                            memory[inedx_SI_DISP] = AX1;
-                            memory[inedx_SI_DISP+1] = AX2;
+                            if (inedx_SI_DISP <= 65534)
+                            {
+                                memory[inedx_SI_DISP] = AX1;
+                                memory[inedx_SI_DISP + 1] = AX2;
+                            }
+                            else if (inedx_SI_DISP <= 65535)
+                            {
+                                memory[inedx_SI_DISP] = AX1;
+                            }
+                            
 
                         }
                         if (BX_check.Checked ==true)
                         {
-
-                            memory[inedx_SI_DISP] = BX1;
-                            memory[inedx_SI_DISP + 1] = BX2;
-
+                            if (inedx_SI_DISP <= 65534)
+                            {
+                                memory[inedx_SI_DISP] = BX1;
+                                memory[inedx_SI_DISP + 1] = BX2;
+                            }
+                            else if (inedx_SI_DISP <= 65535)
+                            {
+                                memory[inedx_SI_DISP] = BX1;
+                            }
+                            
                         }
                         if (CX_check.Checked == true)
                         {
-
-                            memory[inedx_SI_DISP] = CX1;
-                            memory[inedx_SI_DISP + 1] = CX2;
+                            if (inedx_SI_DISP <= 65534)
+                            {
+                                memory[inedx_SI_DISP] = CX1;
+                                memory[inedx_SI_DISP + 1] = CX2;
+                            }
+                            else if (inedx_SI_DISP <= 65535)
+                            {
+                                memory[inedx_SI_DISP] = CX1;
+                            }
 
                         }
                         if (DX_check.Checked == true)
                         {
-
-                            memory[inedx_SI_DISP] = DX1;
-                            memory[inedx_SI_DISP + 1] = DX2;
+                            if (inedx_SI_DISP <= 65534)
+                            {
+                                memory[inedx_SI_DISP] = DX1;
+                                memory[inedx_SI_DISP + 1] = DX2;
+                            }
+                            else if (inedx_SI_DISP <= 65535)
+                            {
+                                memory[inedx_SI_DISP] = DX1;
+                            }
 
                         }
 
@@ -706,30 +916,55 @@ namespace Intel_8086
 
                         if (AX_check.Checked == true)
                         {
-
-                            memory[inedx_DI_DISP] = AX1;
-                            memory[inedx_DI_DISP + 1] = AX2;
+                            if (inedx_DI_DISP <= 65534)
+                            {
+                                memory[inedx_DI_DISP] = AX1;
+                                memory[inedx_DI_DISP + 1] = AX2;
+                            }
+                            else if (inedx_DI_DISP <= 65535)
+                            {
+                                memory[inedx_DI_DISP] = AX1;
+                            }
+                            
 
                         }
                         if (BX_check.Checked == true)
                         {
-
-                            memory[inedx_DI_DISP] = BX1;
-                            memory[inedx_DI_DISP + 1] = BX2;
+                            if (inedx_DI_DISP <= 65534)
+                            {
+                                memory[inedx_DI_DISP] = BX1;
+                                memory[inedx_DI_DISP + 1] = BX2;
+                            }
+                            else if (inedx_DI_DISP <= 65535)
+                            {
+                                memory[inedx_DI_DISP] = BX1;
+                            }
 
                         }
                         if (CX_check.Checked == true)
                         {
-
-                            memory[inedx_DI_DISP] = CX1;
-                            memory[inedx_DI_DISP + 1] = CX2;
+                            if (inedx_DI_DISP <= 65534)
+                            {
+                                memory[inedx_DI_DISP] = CX1;
+                                memory[inedx_DI_DISP + 1] = CX2;
+                            }
+                            else if (inedx_DI_DISP <= 65535)
+                            {
+                                memory[inedx_DI_DISP] = CX1;
+                            }
 
                         }
                         if (DX_check.Checked == true)
                         {
-
-                            memory[inedx_DI_DISP] = DX1;
-                            memory[inedx_DI_DISP + 1] = DX2;
+                            if (inedx_DI_DISP <= 65534)
+                            {
+                                memory[inedx_DI_DISP] = DX1;
+                                memory[inedx_DI_DISP + 1] = DX2;
+                            }
+                            else if (inedx_DI_DISP <= 65535)
+                            {
+                                memory[inedx_DI_DISP] = DX1;
+                            }
 
                         }
 
@@ -745,30 +980,55 @@ namespace Intel_8086
 
                         if (AX_check.Checked == true)
                         {
-
-                            memory[bsae_BX_DISP] = AX1;
-                            memory[bsae_BX_DISP + 1] = AX2;
+                            if (bsae_BX_DISP <= 65534)
+                            {
+                                memory[bsae_BX_DISP] = AX1;
+                                memory[bsae_BX_DISP + 1] = AX2;
+                            }
+                            else if (bsae_BX_DISP <= 65535)
+                            {
+                                memory[bsae_BX_DISP] = AX1;
+                            }
 
                         }
                         if (BX_check.Checked == true)
                         {
-
-                            memory[bsae_BX_DISP] = BX1;
-                            memory[bsae_BX_DISP + 1] = BX2;
+                            if (bsae_BX_DISP <= 65534)
+                            {
+                                memory[bsae_BX_DISP] = BX1;
+                                memory[bsae_BX_DISP + 1] = BX2;
+                            }
+                            else if (bsae_BX_DISP <= 65535)
+                            {
+                                memory[bsae_BX_DISP] = BX1;
+                            }
 
                         }
                         if (CX_check.Checked == true)
                         {
-
-                            memory[bsae_BX_DISP] = CX1;
-                            memory[bsae_BX_DISP + 1] = CX2;
+                            if (bsae_BX_DISP <= 65534)
+                            {
+                                memory[bsae_BX_DISP] = CX1;
+                                memory[bsae_BX_DISP + 1] = CX2;
+                            }
+                            else if (bsae_BX_DISP <= 65535)
+                            {
+                                memory[bsae_BX_DISP] = CX1;
+                            }
 
                         }
                         if (DX_check.Checked == true)
                         {
-
-                            memory[bsae_BX_DISP] = DX1;
-                            memory[bsae_BX_DISP + 1] = DX2;
+                            if (bsae_BX_DISP <= 65534)
+                            {
+                                memory[bsae_BX_DISP] = DX1;
+                                memory[bsae_BX_DISP + 1] = DX2;
+                            }
+                            else if (bsae_BX_DISP <= 65535)
+                            {
+                                memory[bsae_BX_DISP] = DX1;
+                            }
+                           
 
                         }
 
@@ -779,30 +1039,58 @@ namespace Intel_8086
 
                         if (AX_check.Checked == true)
                         {
+                            if (bsae_BP_DISP <= 65534)
+                            {
+                                memory[bsae_BP_DISP] = AX1;
+                                memory[bsae_BP_DISP + 1] = AX2;
 
-                            memory[bsae_BP_DISP] = AX1;
-                            memory[bsae_BP_DISP + 1] = AX2;
+                            }
+                            else if (bsae_BP_DISP <= 65535)
+                            {
+                                memory[bsae_BP_DISP] = AX1;
+                            }
 
                         }
                         if (BX_check.Checked == true)
                         {
+                            if (bsae_BP_DISP <= 65534)
+                            {
+                                memory[bsae_BP_DISP] = BX1;
+                                memory[bsae_BP_DISP + 1] = BX2;
 
-                            memory[bsae_BP_DISP] = BX1;
-                            memory[bsae_BP_DISP + 1] = BX2;
+                            }
+                            else if (bsae_BP_DISP <= 65535)
+                            {
+                                memory[bsae_BP_DISP] = BX1;
+                            }
 
                         }
                         if (CX_check.Checked == true)
                         {
+                            if (bsae_BP_DISP <= 65534)
+                            {
+                                memory[bsae_BP_DISP] = CX1;
+                                memory[bsae_BP_DISP + 1] = CX2;
 
-                            memory[bsae_BP_DISP] = CX1;
-                            memory[bsae_BP_DISP + 1] = CX2;
+                            }
+                            else if (bsae_BP_DISP <= 65535)
+                            {
+                                memory[bsae_BP_DISP] = CX1;
+                            }
 
                         }
                         if (DX_check.Checked == true)
                         {
+                            if (bsae_BP_DISP <= 65534)
+                            {
+                                memory[bsae_BP_DISP] = DX1;
+                                memory[bsae_BP_DISP + 1] = DX2;
 
-                            memory[bsae_BP_DISP] = DX1;
-                            memory[bsae_BP_DISP + 1] = DX2;
+                            }
+                            else if (bsae_BP_DISP <= 65535)
+                            {
+                                memory[bsae_BP_DISP] = DX1;
+                            }
 
                         }
 
@@ -817,30 +1105,56 @@ namespace Intel_8086
 
                         if (AX_check.Checked == true)
                         {
-
-                            memory[index_base_SI_BX_DISP] = AX1;
-                            memory[index_base_SI_BX_DISP + 1] = AX2;
+                            if (index_base_SI_BX_DISP <= 65534)
+                            {
+                                memory[index_base_SI_BX_DISP] = AX1;
+                                memory[index_base_SI_BX_DISP + 1] = AX2;
+                            }
+                            else if (index_base_SI_BX_DISP <= 65535)
+                            {
+                                memory[index_base_SI_BX_DISP] = AX1;
+                            }
+                            
 
                         }
                         if (BX_check.Checked == true)
                         {
 
-                            memory[index_base_SI_BX_DISP] = BX1;
-                            memory[index_base_SI_BX_DISP + 1] = BX2;
+                            if (index_base_SI_BX_DISP <= 65534)
+                            {
+                                memory[index_base_SI_BX_DISP] = BX1;
+                                memory[index_base_SI_BX_DISP + 1] = BX2;
+                            }
+                            else if (index_base_SI_BX_DISP <= 65535)
+                            {
+                                memory[index_base_SI_BX_DISP] = BX1;
+                            }
 
                         }
                         if (CX_check.Checked == true)
                         {
-
-                            memory[index_base_SI_BX_DISP] = CX1;
-                            memory[index_base_SI_BX_DISP + 1] = CX2;
+                            if (index_base_SI_BX_DISP <= 65534)
+                            {
+                                memory[index_base_SI_BX_DISP] = CX1;
+                                memory[index_base_SI_BX_DISP + 1] = CX2;
+                            }
+                            else if (index_base_SI_BX_DISP <= 65535)
+                            {
+                                memory[index_base_SI_BX_DISP] = CX1;
+                            }
 
                         }
                         if (DX_check.Checked == true)
                         {
-
-                            memory[index_base_SI_BX_DISP] = DX1;
-                            memory[index_base_SI_BX_DISP + 1] = DX2;
+                            if (index_base_SI_BX_DISP <= 65534)
+                            {
+                                memory[index_base_SI_BX_DISP] = DX1;
+                                memory[index_base_SI_BX_DISP + 1] = DX2;
+                            }
+                            else if (index_base_SI_BX_DISP <= 65535)
+                            {
+                                memory[index_base_SI_BX_DISP] = DX1;
+                            }
 
                         }
 
@@ -851,30 +1165,54 @@ namespace Intel_8086
 
                         if (AX_check.Checked == true)
                         {
-
-                            memory[index_base_DI_BX_DISP] = AX1;
-                            memory[index_base_DI_BX_DISP + 1] = AX2;
+                            if (index_base_DI_BX_DISP <= 65534)
+                            {
+                                memory[index_base_DI_BX_DISP] = AX1;
+                                memory[index_base_DI_BX_DISP + 1] = AX2;
+                            }
+                            else if (index_base_DI_BX_DISP <= 65535)
+                            {
+                                memory[index_base_DI_BX_DISP] = AX1;
+                            }
 
                         }
                         if (BX_check.Checked == true)
                         {
-
-                            memory[index_base_DI_BX_DISP] = BX1;
-                            memory[index_base_DI_BX_DISP + 1] = BX2;
+                            if (index_base_DI_BX_DISP <= 65534)
+                            {
+                                memory[index_base_DI_BX_DISP] = BX1;
+                                memory[index_base_DI_BX_DISP + 1] = BX2;
+                            }
+                            else if (index_base_DI_BX_DISP <= 65535)
+                            {
+                                memory[index_base_DI_BX_DISP] = BX1;
+                            }
 
                         }
                         if (CX_check.Checked == true)
                         {
-
-                            memory[index_base_DI_BX_DISP] = CX1;
-                            memory[index_base_DI_BX_DISP + 1] = CX2;
+                            if (index_base_DI_BX_DISP <= 65534)
+                            {
+                                memory[index_base_DI_BX_DISP] = CX1;
+                                memory[index_base_DI_BX_DISP + 1] = CX2;
+                            }
+                            else if (index_base_DI_BX_DISP <= 65535)
+                            {
+                                memory[index_base_DI_BX_DISP] = CX1;
+                            }
 
                         }
                         if (DX_check.Checked == true)
                         {
-
-                            memory[index_base_DI_BX_DISP] = DX1;
-                            memory[index_base_DI_BX_DISP + 1] = DX2;
+                            if (index_base_DI_BX_DISP <= 65534)
+                            {
+                                memory[index_base_DI_BX_DISP] = DX1;
+                                memory[index_base_DI_BX_DISP + 1] = DX2;
+                            }
+                            else if (index_base_DI_BX_DISP <= 65535)
+                            {
+                                memory[index_base_DI_BX_DISP] = DX1;
+                            }
 
                         }
 
@@ -885,30 +1223,55 @@ namespace Intel_8086
 
                         if (AX_check.Checked == true)
                         {
-
-                            memory[index_base_SI_BP_DISP] = AX1;
-                            memory[index_base_SI_BP_DISP + 1] = AX2;
+                            if (index_base_SI_BP_DISP <= 65534)
+                            {
+                                memory[index_base_SI_BP_DISP] = AX1;
+                                memory[index_base_SI_BP_DISP + 1] = AX2;
+                            }
+                            else if (index_base_SI_BP_DISP <= 65535)
+                            {
+                                memory[index_base_SI_BP_DISP] = AX1;
+                            }
+                           
 
                         }
                         if (BX_check.Checked == true)
                         {
-
-                            memory[index_base_SI_BP_DISP] = BX1;
-                            memory[index_base_SI_BP_DISP + 1] = BX2;
+                            if (index_base_SI_BP_DISP <= 65534)
+                            {
+                                memory[index_base_SI_BP_DISP] = BX1;
+                                memory[index_base_SI_BP_DISP + 1] = BX2;
+                            }
+                            else if (index_base_SI_BP_DISP <= 65535)
+                            {
+                                memory[index_base_SI_BP_DISP] = BX1;
+                            }
 
                         }
                         if (CX_check.Checked == true)
                         {
-
-                            memory[index_base_SI_BP_DISP] = CX1;
-                            memory[index_base_SI_BP_DISP + 1] = CX2;
+                            if (index_base_SI_BP_DISP <= 65534)
+                            {
+                                memory[index_base_SI_BP_DISP] = CX1;
+                                memory[index_base_SI_BP_DISP + 1] = CX2;
+                            }
+                            else if (index_base_SI_BP_DISP <= 65535)
+                            {
+                                memory[index_base_SI_BP_DISP] = CX1;
+                            }
 
                         }
                         if (DX_check.Checked == true)
                         {
-
-                            memory[index_base_SI_BP_DISP] = DX1;
-                            memory[index_base_SI_BP_DISP + 1] = DX2;
+                            if (index_base_SI_BP_DISP <= 65534)
+                            {
+                                memory[index_base_SI_BP_DISP] = DX1;
+                                memory[index_base_SI_BP_DISP + 1] = DX2;
+                            }
+                            else if (index_base_SI_BP_DISP <= 65535)
+                            {
+                                memory[index_base_SI_BP_DISP] = DX1;
+                            }
 
                         }
 
@@ -919,30 +1282,55 @@ namespace Intel_8086
 
                         if (AX_check.Checked == true)
                         {
-
-                            memory[index_base_DI_BP_DISP] = AX1;
-                            memory[index_base_DI_BP_DISP + 1] = AX2;
+                            if (index_base_DI_BP_DISP <= 65534)
+                            {
+                                memory[index_base_DI_BP_DISP] = AX1;
+                                memory[index_base_DI_BP_DISP + 1] = AX2;
+                            }
+                            else if (index_base_DI_BP_DISP <= 65535)
+                            {
+                                memory[index_base_DI_BP_DISP] = AX1;
+                            }
+                            
 
                         }
                         if (BX_check.Checked == true)
                         {
-
-                            memory[index_base_DI_BP_DISP] = BX1;
-                            memory[index_base_DI_BP_DISP + 1] = BX2;
+                            if (index_base_DI_BP_DISP <= 65534)
+                            {
+                                memory[index_base_DI_BP_DISP] = BX1;
+                                memory[index_base_DI_BP_DISP + 1] = BX2;
+                            }
+                            else if (index_base_DI_BP_DISP <= 65535)
+                            {
+                                memory[index_base_DI_BP_DISP] = BX1;
+                            }
 
                         }
                         if (CX_check.Checked == true)
                         {
-
-                            memory[index_base_DI_BP_DISP] = CX1;
-                            memory[index_base_DI_BP_DISP + 1] = CX2;
+                            if (index_base_DI_BP_DISP <= 65534)
+                            {
+                                memory[index_base_DI_BP_DISP] = CX1;
+                                memory[index_base_DI_BP_DISP + 1] = CX2;
+                            }
+                            else if (index_base_DI_BP_DISP <= 65535)
+                            {
+                                memory[index_base_DI_BP_DISP] = CX1;
+                            }
 
                         }
                         if (DX_check.Checked == true)
                         {
-
-                            memory[index_base_DI_BP_DISP] = DX1;
-                            memory[index_base_DI_BP_DISP + 1] = DX2;
+                            if (index_base_DI_BP_DISP <= 65534)
+                            {
+                                memory[index_base_DI_BP_DISP] = DX1;
+                                memory[index_base_DI_BP_DISP + 1] = DX2;
+                            }
+                            else if (index_base_DI_BP_DISP <= 65535)
+                            {
+                                memory[index_base_DI_BP_DISP] = DX1;
+                            }
 
                         }
 
@@ -994,36 +1382,62 @@ namespace Intel_8086
 
                     if (AX_check.Checked == true)
                     {
-
-                        AX_text.Text = memory[inedx_SI_DISP] + memory[inedx_SI_DISP + 1];
-                        memory[inedx_SI_DISP] = AX1;
-                        memory[inedx_SI_DISP + 1] = AX2; 
-                        
+                        if (inedx_SI_DISP <= 65534)
+                        {
+                            AX_text.Text = memory[inedx_SI_DISP] + memory[inedx_SI_DISP + 1];
+                            memory[inedx_SI_DISP] = AX1;
+                            memory[inedx_SI_DISP + 1] = AX2;
+                        }
+                        else if (inedx_SI_DISP <= 65535)
+                        {
+                            AX_text.Text = memory[inedx_SI_DISP] + "00";
+                            memory[inedx_SI_DISP] = AX1;
+                        }                       
 
                     }
                     if (BX_check.Checked == true)
                     {
-
-                        BX_text.Text = memory[inedx_SI_DISP] + memory[inedx_SI_DISP + 1];
-                        memory[inedx_SI_DISP] = BX1;
-                        memory[inedx_SI_DISP + 1] = BX2;
+                        if (inedx_SI_DISP <= 65534)
+                        {
+                            BX_text.Text = memory[inedx_SI_DISP] + memory[inedx_SI_DISP + 1];
+                            memory[inedx_SI_DISP] = BX1;
+                            memory[inedx_SI_DISP + 1] = BX2;
+                        }
+                        else if (inedx_SI_DISP <= 65535)
+                        {
+                            BX_text.Text = memory[inedx_SI_DISP] + "00";
+                            memory[inedx_SI_DISP] = BX1;
+                        }
 
                     }
                     if (CX_check.Checked == true)
                     {
-
-                        CX_text.Text = memory[inedx_SI_DISP] + memory[inedx_SI_DISP + 1];
-                        memory[inedx_SI_DISP] = CX1;
-                        memory[inedx_SI_DISP + 1] = CX2;
-
+                        if (inedx_SI_DISP <= 65534)
+                        {
+                            CX_text.Text = memory[inedx_SI_DISP] + memory[inedx_SI_DISP + 1];
+                            memory[inedx_SI_DISP] = CX1;
+                            memory[inedx_SI_DISP + 1] = CX2;
+                        }
+                        else if (inedx_SI_DISP <= 65535)
+                        {
+                            CX_text.Text = memory[inedx_SI_DISP] + "00";
+                            memory[inedx_SI_DISP] = CX1;
+                        }                       
 
                     }
                     if (DX_check.Checked == true)
                     {
-
-                        DX_text.Text = memory[inedx_SI_DISP] + memory[inedx_SI_DISP + 1];
-                        memory[inedx_SI_DISP] = DX1;
-                        memory[inedx_SI_DISP + 1] = DX2;
+                        if (inedx_SI_DISP <= 65534)
+                        {
+                            DX_text.Text = memory[inedx_SI_DISP] + memory[inedx_SI_DISP + 1];
+                            memory[inedx_SI_DISP] = DX1;
+                            memory[inedx_SI_DISP + 1] = DX2;
+                        }
+                        else if (inedx_SI_DISP <= 65535)
+                        {
+                            DX_text.Text = memory[inedx_SI_DISP] + "00";
+                            memory[inedx_SI_DISP] = DX1;
+                        }                       
 
                     }
 
@@ -1033,34 +1447,66 @@ namespace Intel_8086
 
                     if (AX_check.Checked == true)
                     {
-
-                        AX_text.Text = memory[inedx_DI_DISP] + memory[inedx_DI_DISP + 1];
-                        memory[inedx_DI_DISP] = AX1;
-                        memory[inedx_DI_DISP + 1] = AX2;
+                        if (inedx_DI_DISP <= 65534)
+                        {
+                            AX_text.Text = memory[inedx_DI_DISP] + memory[inedx_DI_DISP + 1];
+                            memory[inedx_DI_DISP] = AX1;
+                            memory[inedx_DI_DISP + 1] = AX2;
+                        }
+                        else if (inedx_DI_DISP <= 65535)
+                        {
+                            AX_text.Text = memory[inedx_DI_DISP] + "00";
+                            memory[inedx_DI_DISP] = AX1;
+                        }
+                        
 
                     }
                     if (BX_check.Checked == true)
                     {
+                        if (inedx_DI_DISP <= 65534)
+                        {
+                            BX_text.Text = memory[inedx_DI_DISP] + memory[inedx_DI_DISP + 1];
+                            memory[inedx_DI_DISP] = BX1;
+                            memory[inedx_DI_DISP + 1] = BX2;
 
-                        BX_text.Text = memory[inedx_DI_DISP] + memory[inedx_DI_DISP + 1];
-                        memory[inedx_DI_DISP] = BX1;
-                        memory[inedx_DI_DISP + 1] = BX2;
-
+                        }
+                        else if (inedx_DI_DISP <= 65535)
+                        {
+                            BX_text.Text = memory[inedx_DI_DISP] + "00";
+                            memory[inedx_DI_DISP] = BX1;
+                        }
+                       
                     }
                     if (CX_check.Checked == true)
                     {
-
-                        CX_text.Text = memory[inedx_DI_DISP] + memory[inedx_DI_DISP + 1];
-                        memory[inedx_DI_DISP] = CX1;
-                        memory[inedx_DI_DISP + 1] = CX2;
+                        if (inedx_DI_DISP <= 65534)
+                        {
+                            CX_text.Text = memory[inedx_DI_DISP] + memory[inedx_DI_DISP + 1];
+                            memory[inedx_DI_DISP] = CX1;
+                            memory[inedx_DI_DISP + 1] = CX2;
+                        }
+                        else if (inedx_DI_DISP <= 65535)
+                        {
+                            CX_text.Text = memory[inedx_DI_DISP] + "00";
+                            memory[inedx_DI_DISP] = CX1;
+                        }
+                     
 
                     }
                     if (DX_check.Checked == true)
                     {
-
-                        DX_text.Text = memory[inedx_DI_DISP] + memory[inedx_DI_DISP + 1];
-                        memory[inedx_DI_DISP] = DX1;
-                        memory[inedx_DI_DISP + 1] = DX2;
+                        if (inedx_DI_DISP <= 65534)
+                        {
+                            DX_text.Text = memory[inedx_DI_DISP] + memory[inedx_DI_DISP + 1];
+                            memory[inedx_DI_DISP] = DX1;
+                            memory[inedx_DI_DISP + 1] = DX2;
+                        }
+                        else if (inedx_DI_DISP <= 65535)
+                        {
+                            DX_text.Text = memory[inedx_DI_DISP] + "00";
+                            memory[inedx_DI_DISP] = DX1;
+                        }
+                       
 
                     }
 
@@ -1076,35 +1522,66 @@ namespace Intel_8086
 
                     if (AX_check.Checked == true)
                     {
-
-                        AX_text.Text = memory[bsae_BX_DISP] + memory[bsae_BX_DISP + 1];
-                        memory[bsae_BX_DISP] = AX1;
-                        memory[bsae_BX_DISP + 1] = AX2;
+                        if (bsae_BX_DISP <= 65534)
+                        {
+                            AX_text.Text = memory[bsae_BX_DISP] + memory[bsae_BX_DISP + 1];
+                            memory[bsae_BX_DISP] = AX1;
+                            memory[bsae_BX_DISP + 1] = AX2;
+                        }
+                        else if (bsae_BX_DISP <= 65535)
+                        {
+                            AX_text.Text = memory[bsae_BX_DISP] + "00";
+                            memory[bsae_BX_DISP] = AX1;
+                        }
+                       
 
                     }
                     if (BX_check.Checked == true)
                     {
-
-                        BX_text.Text = memory[bsae_BX_DISP] + memory[bsae_BX_DISP + 1];
-                        memory[bsae_BX_DISP] = BX1;
-                        memory[bsae_BX_DISP + 1] = BX2;
+                        if (bsae_BX_DISP <= 65534)
+                        {
+                            BX_text.Text = memory[bsae_BX_DISP] + memory[bsae_BX_DISP + 1];
+                            memory[bsae_BX_DISP] = BX1;
+                            memory[bsae_BX_DISP + 1] = BX2;
+                        }
+                        else if (bsae_BX_DISP <= 65535)
+                        {
+                            BX_text.Text = memory[bsae_BX_DISP] + "00";
+                            memory[bsae_BX_DISP] = BX1;
+                        }
+                        
 
                     }
                     if (CX_check.Checked == true)
                     {
-
-                        CX_text.Text = memory[bsae_BX_DISP] + memory[bsae_BX_DISP + 1];
-                        memory[bsae_BX_DISP] = CX1;
-                        memory[bsae_BX_DISP + 1] = CX2;
+                        if (bsae_BX_DISP <= 65534)
+                        {
+                            CX_text.Text = memory[bsae_BX_DISP] + memory[bsae_BX_DISP + 1];
+                            memory[bsae_BX_DISP] = CX1;
+                            memory[bsae_BX_DISP + 1] = CX2;
+                        }
+                        else if (bsae_BX_DISP <= 65535)
+                        {
+                            CX_text.Text = memory[bsae_BX_DISP] + "00";
+                            memory[bsae_BX_DISP] = CX1;
+                        }
+                      
 
                     }
                     if (DX_check.Checked == true)
                     {
-
-                        DX_text.Text = memory[bsae_BX_DISP] + memory[bsae_BX_DISP + 1];
-                        memory[bsae_BX_DISP] = DX1;
-                        memory[bsae_BX_DISP + 1] = DX2;
-
+                        if (bsae_BX_DISP <= 65534)
+                        {
+                            DX_text.Text = memory[bsae_BX_DISP] + memory[bsae_BX_DISP + 1];
+                            memory[bsae_BX_DISP] = DX1;
+                            memory[bsae_BX_DISP + 1] = DX2;
+                        }
+                        else if (bsae_BX_DISP <= 65535)
+                        {
+                            DX_text.Text = memory[bsae_BX_DISP] + "00";
+                            memory[bsae_BX_DISP] = DX1;
+                        }
+                    
                     }
 
                 }
@@ -1114,34 +1591,66 @@ namespace Intel_8086
 
                     if (AX_check.Checked == true)
                     {
-
-                        AX_text.Text = memory[bsae_BP_DISP] + memory[bsae_BP_DISP + 1];
-                        memory[bsae_BX_DISP] = AX1;
-                        memory[bsae_BX_DISP + 1] = AX2;
+                        if (bsae_BP_DISP <= 65534)
+                        {
+                            AX_text.Text = memory[bsae_BP_DISP] + memory[bsae_BP_DISP + 1];
+                            memory[bsae_BP_DISP] = AX1;
+                            memory[bsae_BP_DISP + 1] = AX2;
+                        }
+                        else if (bsae_BP_DISP <= 65535)
+                        {
+                            AX_text.Text = memory[bsae_BP_DISP] + "00";
+                            memory[bsae_BP_DISP] = AX1;
+                        }
+                        
 
                     }
                     if (BX_check.Checked == true)
                     {
-
-                        BX_text.Text = memory[bsae_BP_DISP] + memory[bsae_BP_DISP + 1];
-                        memory[bsae_BP_DISP] = BX1;
-                        memory[bsae_BP_DISP + 1] = BX2;
+                        if (bsae_BP_DISP <= 65534)
+                        {
+                            BX_text.Text = memory[bsae_BP_DISP] + memory[bsae_BP_DISP + 1];
+                            memory[bsae_BP_DISP] = BX1;
+                            memory[bsae_BP_DISP + 1] = BX2;
+                        }
+                        else if (bsae_BP_DISP <= 65535)
+                        {
+                            BX_text.Text = memory[bsae_BP_DISP] + "00";
+                            memory[bsae_BP_DISP] = BX1;
+                        }
+                        
 
                     }
                     if (CX_check.Checked == true)
                     {
-
-                        CX_text.Text = memory[bsae_BP_DISP] + memory[bsae_BP_DISP + 1];
-                        memory[bsae_BX_DISP] = CX1;
-                        memory[bsae_BX_DISP + 1] = CX2;
+                        if (bsae_BP_DISP <= 65534)
+                        {
+                            CX_text.Text = memory[bsae_BP_DISP] + memory[bsae_BP_DISP + 1];
+                            memory[bsae_BP_DISP] = CX1;
+                            memory[bsae_BP_DISP + 1] = CX2;
+                        }
+                        else if (bsae_BP_DISP <= 65535)
+                        {
+                            CX_text.Text = memory[bsae_BP_DISP] + "00";
+                            memory[bsae_BP_DISP] = CX1;
+                        }
+                       
 
                     }
                     if (DX_check.Checked == true)
                     {
-
-                        DX_text.Text = memory[bsae_BP_DISP] + memory[bsae_BP_DISP + 1];
-                        memory[bsae_BX_DISP] = DX1;
-                        memory[bsae_BX_DISP + 1] = DX2;
+                        if (bsae_BP_DISP <= 65534)
+                        {
+                            DX_text.Text = memory[bsae_BP_DISP] + memory[bsae_BP_DISP + 1];
+                            memory[bsae_BP_DISP] = DX1;
+                            memory[bsae_BP_DISP + 1] = DX2;
+                        }
+                        else if (bsae_BP_DISP <= 65535)
+                        {
+                            DX_text.Text = memory[bsae_BP_DISP] + "00";
+                            memory[bsae_BP_DISP] = DX1;
+                        }
+                      
 
                     }
 
@@ -1156,34 +1665,65 @@ namespace Intel_8086
 
                     if (AX_check.Checked == true)
                     {
-
-                        AX_text.Text = memory[index_base_SI_BX_DISP] + memory[index_base_SI_BX_DISP + 1];
-                        memory[index_base_SI_BX_DISP] = AX1;
-                        memory[index_base_SI_BX_DISP + 1] = AX2;
+                        if (index_base_SI_BX_DISP <= 65534)
+                        {
+                            AX_text.Text = memory[index_base_SI_BX_DISP] + memory[index_base_SI_BX_DISP + 1];
+                            memory[index_base_SI_BX_DISP] = AX1;
+                            memory[index_base_SI_BX_DISP + 1] = AX2;
+                        }
+                        else if (index_base_SI_BX_DISP <= 65535)
+                        {
+                            AX_text.Text = memory[index_base_SI_BX_DISP] + "00";
+                            memory[index_base_SI_BX_DISP] = AX1;
+                        }                       
 
                     }
                     if (BX_check.Checked == true)
                     {
-
-                        BX_text.Text = memory[index_base_SI_BX_DISP] + memory[index_base_SI_BX_DISP + 1];
-                        memory[index_base_SI_BX_DISP] = BX1;
-                        memory[index_base_SI_BX_DISP + 1] = BX2;
+                        if (index_base_SI_BX_DISP <= 65534)
+                        {
+                            BX_text.Text = memory[index_base_SI_BX_DISP] + memory[index_base_SI_BX_DISP + 1];
+                            memory[index_base_SI_BX_DISP] = BX1;
+                            memory[index_base_SI_BX_DISP + 1] = BX2;
+                        }
+                        else if (index_base_SI_BX_DISP <= 65535)
+                        {
+                            BX_text.Text = memory[index_base_SI_BX_DISP] + "00";
+                            memory[index_base_SI_BX_DISP] = BX1;
+                        }
+                        
 
                     }
                     if (CX_check.Checked == true)
                     {
-
-                        CX_text.Text = memory[index_base_SI_BX_DISP] + memory[index_base_SI_BX_DISP + 1];
-                        memory[index_base_SI_BX_DISP] = CX1;
-                        memory[index_base_SI_BX_DISP + 1] = CX2;
+                        if (index_base_SI_BX_DISP <= 65534)
+                        {
+                            CX_text.Text = memory[index_base_SI_BX_DISP] + memory[index_base_SI_BX_DISP + 1];
+                            memory[index_base_SI_BX_DISP] = CX1;
+                            memory[index_base_SI_BX_DISP + 1] = CX2;
+                        }
+                        else if (index_base_SI_BX_DISP <= 65535)
+                        {
+                            CX_text.Text = memory[index_base_SI_BX_DISP] + "00";
+                            memory[index_base_SI_BX_DISP] = CX1;
+                        }
+                    
 
                     }
                     if (DX_check.Checked == true)
                     {
-
-                        DX_text.Text = memory[index_base_SI_BX_DISP] + memory[index_base_SI_BX_DISP + 1];
-                        memory[index_base_SI_BX_DISP] = DX1;
-                        memory[index_base_SI_BX_DISP + 1] = DX2;
+                        if (index_base_SI_BX_DISP <= 65534)
+                        {
+                            DX_text.Text = memory[index_base_SI_BX_DISP] + memory[index_base_SI_BX_DISP + 1];
+                            memory[index_base_SI_BX_DISP] = DX1;
+                            memory[index_base_SI_BX_DISP + 1] = DX2;
+                        }
+                        else if (index_base_SI_BX_DISP <= 65535)
+                        {
+                            DX_text.Text = memory[index_base_SI_BX_DISP] + "00";
+                            memory[index_base_SI_BX_DISP] = DX1;
+                        }
+                   
 
                     }
 
@@ -1194,34 +1734,66 @@ namespace Intel_8086
 
                     if (AX_check.Checked == true)
                     {
-
-                        AX_text.Text = memory[index_base_DI_BX_DISP] + memory[index_base_DI_BX_DISP + 1];
-                        memory[index_base_DI_BX_DISP] = AX1;
-                        memory[index_base_DI_BX_DISP + 1] = AX2;
+                        if (index_base_DI_BX_DISP <= 65534)
+                        {
+                            AX_text.Text = memory[index_base_DI_BX_DISP] + memory[index_base_DI_BX_DISP + 1];
+                            memory[index_base_DI_BX_DISP] = AX1;
+                            memory[index_base_DI_BX_DISP + 1] = AX2;
+                        }
+                        else if (index_base_DI_BX_DISP <= 65535)
+                        {
+                            AX_text.Text = memory[index_base_DI_BX_DISP] + "00";
+                            memory[index_base_DI_BX_DISP] = AX1;
+                        }
+                       
 
                     }
                     if (BX_check.Checked == true)
                     {
-
-                        BX_text.Text = memory[index_base_DI_BX_DISP] + memory[index_base_DI_BX_DISP + 1];
-                        memory[index_base_DI_BX_DISP] = BX1;
-                        memory[index_base_DI_BX_DISP + 1] = BX2;
+                        if (index_base_DI_BX_DISP <= 65534)
+                        {
+                            BX_text.Text = memory[index_base_DI_BX_DISP] + memory[index_base_DI_BX_DISP + 1];
+                            memory[index_base_DI_BX_DISP] = BX1;
+                            memory[index_base_DI_BX_DISP + 1] = BX2;
+                        }
+                        else if (index_base_DI_BX_DISP <= 65535)
+                        {
+                            BX_text.Text = memory[index_base_DI_BX_DISP] + "00";
+                            memory[index_base_DI_BX_DISP] = BX1;
+                        }
+                        
 
                     }
                     if (CX_check.Checked == true)
                     {
-
-                        CX_text.Text = memory[index_base_DI_BX_DISP] + memory[index_base_DI_BX_DISP + 1];
-                        memory[index_base_DI_BX_DISP] = CX1;
-                        memory[index_base_DI_BX_DISP + 1] = CX2;
+                        if (index_base_DI_BX_DISP <= 65534)
+                        {
+                            CX_text.Text = memory[index_base_DI_BX_DISP] + memory[index_base_DI_BX_DISP + 1];
+                            memory[index_base_DI_BX_DISP] = CX1;
+                            memory[index_base_DI_BX_DISP + 1] = CX2;
+                        }
+                        else if (index_base_DI_BX_DISP <= 65535)
+                        {
+                            CX_text.Text = memory[index_base_DI_BX_DISP] + "00";
+                            memory[index_base_DI_BX_DISP] = CX1;
+                        }
+                  
 
                     }
                     if (DX_check.Checked == true)
                     {
-
-                        DX_text.Text = memory[index_base_DI_BX_DISP] + memory[index_base_DI_BX_DISP + 1];
-                        memory[index_base_DI_BX_DISP] = DX1;
-                        memory[index_base_DI_BX_DISP + 1] = DX2;
+                        if (index_base_DI_BX_DISP <= 65534)
+                        {
+                            DX_text.Text = memory[index_base_DI_BX_DISP] + memory[index_base_DI_BX_DISP + 1];
+                            memory[index_base_DI_BX_DISP] = DX1;
+                            memory[index_base_DI_BX_DISP + 1] = DX2;
+                        }
+                        else if (index_base_DI_BX_DISP <= 65535)
+                        {
+                            DX_text.Text = memory[index_base_DI_BX_DISP] + "00";
+                            memory[index_base_DI_BX_DISP] = DX1;
+                        }
+                     
 
                     }
 
@@ -1232,35 +1804,65 @@ namespace Intel_8086
 
                     if (AX_check.Checked == true)
                     {
-
-                        AX_text.Text = memory[index_base_SI_BP_DISP] + memory[index_base_SI_BP_DISP + 1];
-                        memory[index_base_SI_BP_DISP] = AX1;
-                        memory[index_base_SI_BP_DISP + 1] = AX2;
+                        if (index_base_SI_BP_DISP <= 65534)
+                        {
+                            AX_text.Text = memory[index_base_SI_BP_DISP] + memory[index_base_SI_BP_DISP + 1];
+                            memory[index_base_SI_BP_DISP] = AX1;
+                            memory[index_base_SI_BP_DISP + 1] = AX2;
+                        }
+                        else if (index_base_SI_BP_DISP <= 65535)
+                        {
+                            AX_text.Text = memory[index_base_SI_BP_DISP] + "00";
+                            memory[index_base_SI_BP_DISP] = AX1;
+                        }
+                        
 
                     }
                     if (BX_check.Checked == true)
                     {
-
-                        BX_text.Text = memory[index_base_SI_BP_DISP] + memory[index_base_SI_BP_DISP + 1];
-                        memory[index_base_SI_BP_DISP] = BX1;
-                        memory[index_base_SI_BP_DISP + 1] = BX2;
+                        if (index_base_SI_BP_DISP <= 65534)
+                        {
+                            BX_text.Text = memory[index_base_SI_BP_DISP] + memory[index_base_SI_BP_DISP + 1];
+                            memory[index_base_SI_BP_DISP] = BX1;
+                            memory[index_base_SI_BP_DISP + 1] = BX2;
+                        }
+                        else if (index_base_SI_BP_DISP <= 65535)
+                        {
+                            BX_text.Text = memory[index_base_SI_BP_DISP] + "00";
+                            memory[index_base_SI_BP_DISP] = BX1;
+                        }
+                       
 
                     }
                     if (CX_check.Checked == true)
                     {
-
-                        CX_text.Text = memory[index_base_SI_BP_DISP] + memory[index_base_SI_BP_DISP + 1];
-                        memory[index_base_SI_BP_DISP] = CX1;
-                        memory[index_base_SI_BP_DISP + 1] = CX2;
+                        if (index_base_SI_BP_DISP <= 65534)
+                        {
+                            CX_text.Text = memory[index_base_SI_BP_DISP] + memory[index_base_SI_BP_DISP + 1];
+                            memory[index_base_SI_BP_DISP] = CX1;
+                            memory[index_base_SI_BP_DISP + 1] = CX2;
+                        }
+                        else if (index_base_SI_BP_DISP <= 65535)
+                        {
+                            CX_text.Text = memory[index_base_SI_BP_DISP] + "00";
+                            memory[index_base_SI_BP_DISP] = CX1;
+                        }
+                        
 
                     }
                     if (DX_check.Checked == true)
                     {
-
-                        DX_text.Text = memory[index_base_SI_BP_DISP] + memory[index_base_SI_BP_DISP + 1];
-                        memory[index_base_SI_BP_DISP] = DX1;
-                        memory[index_base_SI_BP_DISP + 1] = DX2;
-
+                        if (index_base_SI_BP_DISP <= 65534)
+                        {
+                            DX_text.Text = memory[index_base_SI_BP_DISP] + memory[index_base_SI_BP_DISP + 1];
+                            memory[index_base_SI_BP_DISP] = DX1;
+                            memory[index_base_SI_BP_DISP + 1] = DX2;
+                        }
+                        else if (index_base_SI_BP_DISP <= 65535)
+                        {
+                            DX_text.Text = memory[index_base_SI_BP_DISP] + "00";
+                            memory[index_base_SI_BP_DISP] = DX1;
+                        }                      
                     }
 
                 }
@@ -1270,34 +1872,66 @@ namespace Intel_8086
 
                     if (AX_check.Checked == true)
                     {
-
-                        AX_text.Text = memory[index_base_DI_BP_DISP] + memory[index_base_DI_BP_DISP + 1];
-                        memory[index_base_DI_BP_DISP] = AX1;
-                        memory[index_base_DI_BP_DISP + 1] = AX2;
+                        if (index_base_DI_BP_DISP <= 65534)
+                        {
+                            AX_text.Text = memory[index_base_DI_BP_DISP] + memory[index_base_DI_BP_DISP + 1];
+                            memory[index_base_DI_BP_DISP] = AX1;
+                            memory[index_base_DI_BP_DISP + 1] = AX2;
+                        }
+                        else if (index_base_DI_BP_DISP <= 65535)
+                        {
+                            AX_text.Text = memory[index_base_DI_BP_DISP] + "00";
+                            memory[index_base_DI_BP_DISP] = AX1;
+                        }
+                        
 
                     }
                     if (BX_check.Checked == true)
                     {
-
-                        BX_text.Text = memory[index_base_DI_BP_DISP] + memory[index_base_DI_BP_DISP + 1];
-                        memory[index_base_DI_BP_DISP] = BX1;
-                        memory[index_base_DI_BP_DISP + 1] = BX2;
+                        if (index_base_DI_BP_DISP <= 65534)
+                        {
+                            BX_text.Text = memory[index_base_DI_BP_DISP] + memory[index_base_DI_BP_DISP + 1];
+                            memory[index_base_DI_BP_DISP] = BX1;
+                            memory[index_base_DI_BP_DISP + 1] = BX2;
+                        }
+                        else if (index_base_DI_BP_DISP <= 65535)
+                        {
+                            BX_text.Text = memory[index_base_DI_BP_DISP] + "00";
+                            memory[index_base_DI_BP_DISP] = BX1;
+                        }
+                      
 
                     }
                     if (CX_check.Checked == true)
                     {
-
-                        CX_text.Text = memory[index_base_DI_BP_DISP] + memory[index_base_DI_BP_DISP + 1];
-                        memory[index_base_DI_BP_DISP] = CX1;
-                        memory[index_base_DI_BP_DISP + 1] = CX2;
+                        if (index_base_DI_BP_DISP <= 65534)
+                        {
+                            CX_text.Text = memory[index_base_DI_BP_DISP] + memory[index_base_DI_BP_DISP + 1];
+                            memory[index_base_DI_BP_DISP] = CX1;
+                            memory[index_base_DI_BP_DISP + 1] = CX2;
+                        }
+                        else if (index_base_DI_BP_DISP <= 65535)
+                        {
+                            CX_text.Text = memory[index_base_DI_BP_DISP] + "00";
+                            memory[index_base_DI_BP_DISP] = CX1;
+                        }
+                        
 
                     }
                     if (DX_check.Checked == true)
                     {
-
-                        DX_text.Text = memory[index_base_DI_BP_DISP] + memory[index_base_DI_BP_DISP + 1];
-                        memory[index_base_DI_BP_DISP] = DX1;
-                        memory[index_base_DI_BP_DISP + 1] = DX2;
+                        if (index_base_DI_BP_DISP <= 65534)
+                        {
+                            DX_text.Text = memory[index_base_DI_BP_DISP] + memory[index_base_DI_BP_DISP + 1];
+                            memory[index_base_DI_BP_DISP] = DX1;
+                            memory[index_base_DI_BP_DISP + 1] = DX2;
+                        }
+                        else if (index_base_DI_BP_DISP <= 65535)
+                        {
+                            DX_text.Text = memory[index_base_DI_BP_DISP] + "00";
+                            memory[index_base_DI_BP_DISP] = DX1;
+                        }
+                       
 
                     }
 
@@ -1311,118 +1945,229 @@ namespace Intel_8086
         {
 
             int SP = int.Parse(SP_text.Text, System.Globalization.NumberStyles.HexNumber);
-            int SP2 = SP + 2;
 
-            string AX1 = AX_text.Text.Remove(2);
-            string AX2 = AX_text.Text.Substring(2);
-
-            stack[SP] = AX1;
-            stack[SP + 1] = AX2;
-
-            if (SP2 >= 256 && SP2 <= 4095)
+            if (SP <= 65534)
             {
+                int SP2 = SP + 2;
 
-                SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+                string AX1 = AX_text.Text.Remove(2);
+                string AX2 = AX_text.Text.Substring(2);
+
+                stack[SP] = AX1;
+                stack[SP + 1] = AX2;
+                if (SP2 >= 256 && SP2 <= 4095)
+                {
+
+                    SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 >= 16 && SP2 <= 255)
+                {
+
+                    SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 < 16)
+                {
+
+                    SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 > 4095)
+                {
+
+                    SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
+
+                }
 
             }
-            if (SP2 >= 16 && SP2 <= 255)
+
+            else if (SP <= 65535)
             {
+                int SP2 = SP;
+                string AX1 = AX_text.Text.Remove(2);
+                stack[SP] = AX1;
 
-                SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
+                if (SP2 >= 256 && SP2 <= 4095)
+                {
 
-            }
-            if (SP2 < 16)
-            {
+                    SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
 
-                SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
+                }
+                if (SP2 >= 16 && SP2 <= 255)
+                {
 
-            }
-            if (SP2 > 4095)
-            {
+                    SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
 
-                SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
+                }
+                if (SP2 < 16)
+                {
 
-            }
+                    SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
 
-           
+                }
+                if (SP2 > 4095)
+                {
+
+                    SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
+
+                }
+            }         
 
         }
 
         private void Push_BX_Click(object sender, EventArgs e)
         {
 
-            int SP = int.Parse(SP_text.Text, System.Globalization.NumberStyles.HexNumber);
-            int SP2 = SP + 2;
+            int SP = int.Parse(SP_text.Text, System.Globalization.NumberStyles.HexNumber);           
 
-            string BX1 = BX_text.Text.Remove(2);
-            string BX2 = BX_text.Text.Substring(2);
-
-            stack[SP] = BX1;
-            stack[SP + 1] = BX2;
-
-            if (SP2 >= 256 && SP2 <= 4095)
+            if (SP <= 65534)
             {
+                int SP2 = SP + 2;
 
-                SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+                string BX1 = BX_text.Text.Remove(2);
+                string BX2 = BX_text.Text.Substring(2);
 
+                stack[SP] = BX1;
+                stack[SP + 1] = BX2;
+
+                if (SP2 >= 256 && SP2 <= 4095)
+                {
+
+                    SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 >= 16 && SP2 <= 255)
+                {
+
+                    SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 < 16)
+                {
+
+                    SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 > 4095)
+                {
+
+                    SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
+
+                }
             }
-            if (SP2 >= 16 && SP2 <= 255)
+
+            else if (SP <= 65535)
             {
+                int SP2 = SP;
 
-                SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
+                string BX1 = BX_text.Text.Remove(2);
 
+                stack[SP] = BX1;
+
+                if (SP2 >= 256 && SP2 <= 4095)
+                {
+
+                    SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 >= 16 && SP2 <= 255)
+                {
+
+                    SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 < 16)
+                {
+
+                    SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 > 4095)
+                {
+
+                    SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
+
+                }
             }
-            if (SP2 < 16)
-            {
-
-                SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
-
-            }
-            if (SP2 > 4095)
-            {
-
-                SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
-
-            }
-
+           
         }
 
         private void Push_CX_Click(object sender, EventArgs e)
         {
 
             int SP = int.Parse(SP_text.Text, System.Globalization.NumberStyles.HexNumber);
-            int SP2 = SP + 2;
 
-            string CX1 = CX_text.Text.Remove(2);
-            string CX2 = CX_text.Text.Substring(2);
-
-            stack[SP] = CX1;
-            stack[SP + 1] = CX2;
-
-            if (SP2 >= 256 && SP2 <= 4095)
+            if (SP <= 65534)
             {
+                int SP2 = SP + 2;
 
-                SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+                string CX1 = CX_text.Text.Remove(2);
+                string CX2 = CX_text.Text.Substring(2);
+
+                stack[SP] = CX1;
+                stack[SP + 1] = CX2;
+
+                if (SP2 >= 256 && SP2 <= 4095)
+                {
+
+                    SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 >= 16 && SP2 <= 255)
+                {
+
+                    SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 < 16)
+                {
+
+                    SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 > 4095)
+                {
+
+                    SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
+
+                }
+            }
+            else if (SP <= 65535)
+            {
+                int SP2 = SP;
+
+                string CX1 = CX_text.Text.Remove(2);
+
+                stack[SP] = CX1;
+
+                if (SP2 >= 256 && SP2 <= 4095)
+                {
+
+                    SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 >= 16 && SP2 <= 255)
+                {
+
+                    SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 < 16)
+                {
+
+                    SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 > 4095)
+                {
+
+                    SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
+
+                }
 
             }
-            if (SP2 >= 16 && SP2 <= 255)
-            {
-
-                SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
-
-            }
-            if (SP2 < 16)
-            {
-
-                SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
-
-            }
-            if (SP2 > 4095)
-            {
-
-                SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
-
-            }
+                
 
         }
 
@@ -1430,39 +2175,79 @@ namespace Intel_8086
         {
 
             int SP = int.Parse(SP_text.Text, System.Globalization.NumberStyles.HexNumber);
-            int SP2 = SP + 2;
 
-            string DX1 = DX_text.Text.Remove(2);
-            string DX2 = DX_text.Text.Substring(2);
+            if (SP <= 65534)
+            {
+                int SP2 = SP + 2;
 
-            stack[SP] = DX1;
-            stack[SP + 1] = DX2;
+                string DX1 = DX_text.Text.Remove(2);
+                string DX2 = DX_text.Text.Substring(2);
+
+                stack[SP] = DX1;
+                stack[SP + 1] = DX2;
 
 
-            if (SP2 >= 256 && SP2 <= 4095)
+                if (SP2 >= 256 && SP2 <= 4095)
+                {
+
+                    SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 >= 16 && SP2 <= 255)
+                {
+
+                    SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 < 16)
+                {
+
+                    SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 > 4095)
+                {
+
+                    SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
+
+                }
+            }
+            else if (SP <= 65535)
             {
 
-                SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+                int SP2 = SP;
 
+                string DX1 = DX_text.Text.Remove(2);
+
+                stack[SP] = DX1;
+
+                if (SP2 >= 256 && SP2 <= 4095)
+                {
+
+                    SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 >= 16 && SP2 <= 255)
+                {
+
+                    SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 < 16)
+                {
+
+                    SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 > 4095)
+                {
+
+                    SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
+
+                }
             }
-            if (SP2 >= 16 && SP2 <= 255)
-            {
 
-                SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
-
-            }
-            if (SP2 < 16)
-            {
-
-                SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
-
-            }
-            if (SP2 > 4095)
-            {
-
-                SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
-
-            }
+                
 
         }
 
@@ -1470,37 +2255,43 @@ namespace Intel_8086
         {
 
             int SP = int.Parse(SP_text.Text, System.Globalization.NumberStyles.HexNumber);
-            int SP2 = SP - 2;
-
-            AX_text.Text = stack[SP2] + stack[SP2 + 1];
-
-            stack[SP2] = "00";
-            stack[SP2 + 1] = "00";
-
-            if (SP2 >= 256 && SP2 <= 4095)
+            if (SP > 0)
             {
+                int SP2 = SP - 2;
 
-                SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+                AX_text.Text = stack[SP2] + stack[SP2 + 1];
 
+                stack[SP2] = "00";
+                stack[SP2 + 1] = "00";
+
+                if (SP2 >= 256 && SP2 <= 4095)
+                {
+
+                    SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 >= 16 && SP2 <= 255)
+                {
+
+                    SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 < 16)
+                {
+
+                    SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 > 4095)
+                {
+
+                    SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
+
+                }
             }
-            if (SP2 >= 16 && SP2 <= 255)
-            {
+            
 
-                SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
-
-            }
-            if (SP2 < 16)
-            {
-
-                SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
-
-            }
-            if (SP2 > 4095)
-            {
-
-                SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
-
-            }
+           
 
         }
 
@@ -1508,37 +2299,41 @@ namespace Intel_8086
         {
 
             int SP = int.Parse(SP_text.Text, System.Globalization.NumberStyles.HexNumber);
-            int SP2 = SP - 2;
-
-            BX_text.Text = stack[SP2] + stack[SP2 + 1];
-
-            stack[SP2] = "00";
-            stack[SP2 + 1] = "00";
-
-            if (SP2 >= 256 && SP2 <= 4095)
+            if (SP > 0)
             {
+                int SP2 = SP - 2;
 
-                SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+                BX_text.Text = stack[SP2] + stack[SP2 + 1];
 
+                stack[SP2] = "00";
+                stack[SP2 + 1] = "00";
+
+                if (SP2 >= 256 && SP2 <= 4095)
+                {
+
+                    SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 >= 16 && SP2 <= 255)
+                {
+
+                    SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 < 16)
+                {
+
+                    SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 > 4095)
+                {
+
+                    SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
+
+                }
             }
-            if (SP2 >= 16 && SP2 <= 255)
-            {
-
-                SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
-
-            }
-            if (SP2 < 16)
-            {
-
-                SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
-
-            }
-            if (SP2 > 4095)
-            {
-
-                SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
-
-            }
+            
 
         }
 
@@ -1546,37 +2341,43 @@ namespace Intel_8086
         {
 
             int SP = int.Parse(SP_text.Text, System.Globalization.NumberStyles.HexNumber);
-            int SP2 = SP - 2;
-
-            CX_text.Text = stack[SP2] + stack[SP2 + 1];
-
-            stack[SP2] = "00";
-            stack[SP2+1] = "00";
-
-            if (SP2 >= 256 && SP2 <= 4095)
+            
+            if (SP > 0)
             {
+                int SP2 = SP - 2;
 
-                SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+                CX_text.Text = stack[SP2] + stack[SP2 + 1];
 
+                stack[SP2] = "00";
+                stack[SP2 + 1] = "00";
+
+                if (SP2 >= 256 && SP2 <= 4095)
+                {
+
+                    SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 >= 16 && SP2 <= 255)
+                {
+
+                    SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 < 16)
+                {
+
+                    SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 > 4095)
+                {
+
+                    SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
+
+                }
             }
-            if (SP2 >= 16 && SP2 <= 255)
-            {
 
-                SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
-
-            }
-            if (SP2 < 16)
-            {
-
-                SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
-
-            }
-            if (SP2 > 4095)
-            {
-
-                SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
-
-            }
+               
 
         }
 
@@ -1584,37 +2385,44 @@ namespace Intel_8086
         {
 
             int SP = int.Parse(SP_text.Text, System.Globalization.NumberStyles.HexNumber);
-            int SP2 = SP - 2;
 
-            DX_text.Text = stack[SP2] + stack[SP2 + 1];
-
-            stack[SP2] = "00";
-            stack[SP2 + 1] = "00";
-
-            if (SP2 >= 256 && SP2 <= 4095)
+            if (SP > 0)
             {
 
-                SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+                int SP2 = SP - 2;
+
+                DX_text.Text = stack[SP2] + stack[SP2 + 1];
+
+                stack[SP2] = "00";
+                stack[SP2 + 1] = "00";
+
+                if (SP2 >= 256 && SP2 <= 4095)
+                {
+
+                    SP_text.Text = ($"0{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 >= 16 && SP2 <= 255)
+                {
+
+                    SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 < 16)
+                {
+
+                    SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
+
+                }
+                if (SP2 > 4095)
+                {
+
+                    SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
+
+                }
 
             }
-            if (SP2 >= 16 && SP2 <= 255)
-            {
-
-                SP_text.Text = ($"00{Convert.ToString(SP2, 16).ToUpper()}");
-
-            }
-            if (SP2 < 16)
-            {
-
-                SP_text.Text = ($"000{Convert.ToString(SP2, 16).ToUpper()}");
-
-            }
-            if (SP2 > 4095)
-            {
-
-                SP_text.Text = Convert.ToString(SP2, 16).ToUpper();
-
-            }
+               
 
         }
 
@@ -1622,7 +2430,7 @@ namespace Intel_8086
         {
         
 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < stack.Length; i++)
             {
                 
 
